@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src
+END
+filtertypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/filtertypes.h
+END
+simmetric.cc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/simmetric.cc
+END
+compressionargs.cc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/compressionargs.cc
+END
+simmetric.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/simmetric.h
+END
+unittest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/unittest.cc
+END
+compressionargs.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/compressionargs.h
+END
+gramgen.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/gramgen.cc
+END
+typedef.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/typedef.cc
+END
+gramgen.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/gramgen.h
+END
+tr1_local.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/tr1_local.h
+END
+typedef.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/typedef.h
+END
+query.cc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/query.cc
+END
+query.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/query.h
+END
+filtertypes.cc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/common/src/filtertypes.cc
+END

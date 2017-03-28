@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/cluster
+END
+ftable.cc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/cluster/ftable.cc
+END
+ftable.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/cluster/ftable.h
+END
+cluster.cc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/cluster/cluster.cc
+END
+cluster.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/cluster/cluster.h
+END
+clusters.cc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/cluster/clusters.cc
+END
+lexic.cc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/cluster/lexic.cc
+END
+medoids.cc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/cluster/medoids.cc
+END
+clusters.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/cluster/clusters.h
+END
+lexic.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/cluster/lexic.h
+END
+medoids.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/cluster/medoids.h
+END

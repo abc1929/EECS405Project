@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/freqest
+END
+freqest.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/freqest/freqest.h
+END
+record.cc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/freqest/record.cc
+END
+errorcorr.cc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/freqest/errorcorr.cc
+END
+test.cc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/freqest/test.cc
+END
+predicate.cc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/freqest/predicate.cc
+END
+record.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/freqest/record.h
+END
+errorcorr.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/freqest/errorcorr.h
+END
+test.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/freqest/test.h
+END
+predicate.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/freqest/predicate.h
+END
+update.cc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/freqest/update.cc
+END
+update.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/freqest/update.h
+END
+freqest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/freqest/freqest.cc
+END

@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src
+END
+misc.cc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/misc.cc
+END
+range.cc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/range.cc
+END
+misc.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/misc.h
+END
+time.cc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/time.cc
+END
+speedtest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/speedtest.cc
+END
+output.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/output.h
+END
+stringshuffler.cc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/stringshuffler.cc
+END
+appsearch.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/appsearch.cc
+END
+stringshuffler.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/stringshuffler.h
+END
+io.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/io.cc
+END
+io.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/io.h
+END
+looptimer.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/looptimer.h
+END
+array.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/array.h
+END
+querygroup.cc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/querygroup.cc
+END
+scan.cc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/scan.cc
+END
+gram.cc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/gram.cc
+END
+debug.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/debug.h
+END
+range.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/range.h
+END
+querygrams.cc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/querygrams.cc
+END
+input.cc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/input.cc
+END
+output.cc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/output.cc
+END
+time.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/time.h
+END
+querygrams.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/querygrams.h
+END
+input.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/input.h
+END
+appsearch.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/appsearch.h
+END
+looptimer.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/looptimer.cc
+END
+array.cc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/array.cc
+END
+unittest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/unittest.cc
+END
+querygroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/querygroup.h
+END
+scan.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/scan.h
+END
+simfuncs.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/simfuncs.cc
+END
+gram.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/gram.h
+END
+simfuncs.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/util/src/simfuncs.h
+END

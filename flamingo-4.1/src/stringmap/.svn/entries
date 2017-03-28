@@ -1,0 +1,98 @@
+8
+
+dir
+6146
+https://grape/svn/group/projects/flamingo/www/releases/4.1/src/stringmap
+https://grape/svn/group
+
+
+
+2012-02-22T22:29:39.009963Z
+6146
+abehm
+
+
+svn:special svn:externals svn:needs-lock
+
+build
+dir
+
+source-big.zip
+file
+
+
+
+
+2007-04-11T06:58:37.000000Z
+1b79612ebb3a834604da83edcb86d11c
+2012-02-22T22:29:39.009963Z
+6146
+abehm
+has-props
+
+source.zip
+file
+
+
+
+
+2007-04-11T06:58:37.000000Z
+46bd2bb02b030498a7f2b907b85dd65b
+2012-02-22T22:29:39.009963Z
+6146
+abehm
+has-props
+
+source1.zip
+file
+
+
+
+
+2007-04-11T06:58:37.000000Z
+4794ec749dd0b3bcd46bad1fd8db562b
+2012-02-22T22:29:39.009963Z
+6146
+abehm
+has-props
+
+source2.zip
+file
+
+
+
+
+2007-04-11T06:58:37.000000Z
+b1792a90b4f944f972562a212ba4d9cd
+2012-02-22T22:29:39.009963Z
+6146
+abehm
+has-props
+
+src
+dir
+
+README-RTREE.txt
+file
+
+
+
+
+2010-02-18T19:41:48.000000Z
+aa658adb025cbbdf80ddf191f3b9a95a
+2012-02-22T22:29:39.009963Z
+6146
+abehm
+
+CMakeLists.txt
+file
+
+
+
+
+2010-10-19T06:39:47.000000Z
+31eabebec7454e80bcb2d787ee075f6d
+2012-02-22T22:29:39.009963Z
+6146
+abehm
+

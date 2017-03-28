@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable
+END
+indexentry.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/indexentry.h
+END
+ppdtable.cc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/ppdtable.cc
+END
+closeunique.cc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/closeunique.cc
+END
+ppdtable.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/ppdtable.h
+END
+closeunique.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/closeunique.h
+END
+ppdpair.cc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/ppdpair.cc
+END
+ppdpair.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/ppdpair.h
+END
+ppdtriple.cc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/ppdtriple.cc
+END
+ppdentry.cc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/ppdentry.cc
+END
+ppdtriple.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/ppdtriple.h
+END
+ppdentry.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/ppdentry.h
+END
+closerand.cc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/closerand.cc
+END
+closerand.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/closerand.h
+END
+allrand.cc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/allrand.cc
+END
+closelex.cc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/closelex.cc
+END
+allrand.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/allrand.h
+END
+closelex.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/closelex.h
+END
+ppdsample.cc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/ppdsample.cc
+END
+ppdsample.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/ppdsample.h
+END
+indexentry.cc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/group/!svn/ver/6146/projects/flamingo/www/releases/4.1/src/sepia/src/ppdtable/indexentry.cc
+END
