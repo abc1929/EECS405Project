@@ -29,7 +29,7 @@ int main()
   readString(data, filenameData);
 
   const unsigned
-    editdist = 2, 
+    editdist = 5, 
     q = 1, 
     n1 = 2, 
     n2 = 6;
@@ -47,7 +47,7 @@ int main()
   // 3. use
 
   vector<unsigned> results;
-  h.search("delmare", editdist, results);
+  h.search("velxfye", editdist, results);
   
   for (vector<unsigned>::const_iterator i = results.begin(); i != results.end(); ++i)
     cout << data[*i] << endl;

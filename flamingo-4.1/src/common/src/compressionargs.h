@@ -23,7 +23,7 @@ class CompressionArgs {
   std::set<uint>* blackList;
   
   CompressionArgs() { 
-    blackList = NULL;
+    blackList = 0;
     holesOptimized = false;
   }
 };
