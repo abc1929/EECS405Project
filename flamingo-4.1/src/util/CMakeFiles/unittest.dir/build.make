@@ -35,42 +35,42 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jwu/Documents/Github/EECS405Project/test/src/partenum
+CMAKE_SOURCE_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jwu/Documents/Github/EECS405Project/test/src/partenum
+CMAKE_BINARY_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum
 
 # Include any dependencies generated for this target.
-include /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/depend.make
+include /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/depend.make
 
 # Include the progress variables for this target.
-include /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/progress.make
+include /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/flags.make
+include /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/flags.make
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/unittest.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/unittest.dir/src/unittest.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/unittest.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/unittest.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/unittest.dir/src/unittest.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/unittest.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unittest.dir/src/unittest.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/unittest.cc > CMakeFiles/unittest.dir/src/unittest.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/unittest.cc > CMakeFiles/unittest.dir/src/unittest.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unittest.dir/src/unittest.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/unittest.cc -o CMakeFiles/unittest.dir/src/unittest.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/unittest.cc -o CMakeFiles/unittest.dir/src/unittest.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o
 
 # Object files for target unittest
 unittest_OBJECTS = \
@@ -79,25 +79,25 @@ unittest_OBJECTS = \
 # External object files for target unittest
 unittest_EXTERNAL_OBJECTS =
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/unittest: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/unittest: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/build.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/unittest: /home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/unittest: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/link.txt
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/unittest: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/unittest: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/unittest: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/unittest: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable build/unittest"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unittest.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unittest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/build: /home/jwu/Documents/Github/EECS405Project/test/src/util/build/unittest
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/build
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/unittest
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.requires
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o.requires
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/clean:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && $(CMAKE_COMMAND) -P CMakeFiles/unittest.dir/cmake_clean.cmake
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/clean
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/clean:
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && $(CMAKE_COMMAND) -P CMakeFiles/unittest.dir/cmake_clean.cmake
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/clean
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/depend:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jwu/Documents/Github/EECS405Project/test/src/partenum /home/jwu/Documents/Github/EECS405Project/test/src/util /home/jwu/Documents/Github/EECS405Project/test/src/partenum /home/jwu/Documents/Github/EECS405Project/test/src/util /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/depend
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/depend:
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/depend
 

@@ -4,12 +4,20 @@ set(PARTENUM_LIB_SRC
   src/partenum.cc
 )
 
+set(VPARTENUM_LIB_SRC 
+  src/vpartenum.cc
+)
+
 set(PARTENUM_UNITTEST_EXEC_SRC
   src/unittest.cc
 )
 
 set(PARTENUM_EXAMPLE_EXEC_SRC
   src/example.cc
+)
+
+set(VPARTENUM_EXAMPLE_EXEC_SRC
+  src/test.cc
 )
 
 include_directories (
@@ -29,10 +37,16 @@ add_subdirectory(../util/ ../util/)
 add_definitions(-Wall -O3)
 add_library(partenum-lib SHARED ${PARTENUM_LIB_SRC})
 target_link_libraries(partenum-lib ${CMAKE_REQUIRED_LIBRARIES})
+add_library(vpartenum-lib SHARED ${VPARTENUM_LIB_SRC})
+target_link_libraries(vpartenum-lib ${CMAKE_REQUIRED_LIBRARIES})
 
 add_executable(example_partenum ${PARTENUM_EXAMPLE_EXEC_SRC})
 add_dependencies(example_partenum partenum-lib util-lib)
 target_link_libraries(example_partenum partenum-lib util-lib rt)
+
+add_executable(example_vpartenum ${VPARTENUM_EXAMPLE_EXEC_SRC})
+add_dependencies(example_vpartenum vpartenum-lib util-lib)
+target_link_libraries(example_vpartenum vpartenum-lib util-lib rt)
 
 add_executable(unittest_partenum ${PARTENUM_UNITTEST_EXEC_SRC})
 add_dependencies(unittest_partenum partenum-lib util-lib)

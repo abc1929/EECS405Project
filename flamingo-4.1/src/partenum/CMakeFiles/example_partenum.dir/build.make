@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jwu/Documents/Github/EECS405Project/test/src/partenum
+CMAKE_SOURCE_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jwu/Documents/Github/EECS405Project/test/src/partenum
+CMAKE_BINARY_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum
 
 # Include any dependencies generated for this target.
 include CMakeFiles/example_partenum.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/example_partenum.dir/flags.make
 
 CMakeFiles/example_partenum.dir/src/example.cc.o: CMakeFiles/example_partenum.dir/flags.make
 CMakeFiles/example_partenum.dir/src/example.cc.o: src/example.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/example_partenum.dir/src/example.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/example_partenum.dir/src/example.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/example.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/example_partenum.dir/src/example.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/example.cc
 
 CMakeFiles/example_partenum.dir/src/example.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/example_partenum.dir/src/example.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/example.cc > CMakeFiles/example_partenum.dir/src/example.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/example.cc > CMakeFiles/example_partenum.dir/src/example.cc.i
 
 CMakeFiles/example_partenum.dir/src/example.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/example_partenum.dir/src/example.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/example.cc -o CMakeFiles/example_partenum.dir/src/example.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/example.cc -o CMakeFiles/example_partenum.dir/src/example.cc.s
 
 CMakeFiles/example_partenum.dir/src/example.cc.o.requires:
 .PHONY : CMakeFiles/example_partenum.dir/src/example.cc.o.requires
@@ -82,7 +82,7 @@ example_partenum_EXTERNAL_OBJECTS =
 build/example_partenum: CMakeFiles/example_partenum.dir/src/example.cc.o
 build/example_partenum: CMakeFiles/example_partenum.dir/build.make
 build/example_partenum: build/libpartenum-lib.so
-build/example_partenum: /home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so
+build/example_partenum: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so
 build/example_partenum: CMakeFiles/example_partenum.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable build/example_partenum"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example_partenum.dir/link.txt --verbose=$(VERBOSE)
@@ -99,6 +99,6 @@ CMakeFiles/example_partenum.dir/clean:
 .PHONY : CMakeFiles/example_partenum.dir/clean
 
 CMakeFiles/example_partenum.dir/depend:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jwu/Documents/Github/EECS405Project/test/src/partenum /home/jwu/Documents/Github/EECS405Project/test/src/partenum /home/jwu/Documents/Github/EECS405Project/test/src/partenum /home/jwu/Documents/Github/EECS405Project/test/src/partenum /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles/example_partenum.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles/example_partenum.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/example_partenum.dir/depend
 

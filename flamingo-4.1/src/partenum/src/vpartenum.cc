@@ -13,7 +13,7 @@
   Uses: http://www.boost.org/doc/html/hash.html
 */
 
-#include "vPartEnum.h"
+#include "vpartenum.h"
 
 #include <sys/time.h>
 #include <sys/stat.h>

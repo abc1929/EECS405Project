@@ -96,9 +96,9 @@ set
 vector
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/partenum.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/partenum.cc
 partenum.h
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/partenum.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/partenum.h
 sys/time.h
 -
 sys/stat.h
@@ -116,13 +116,13 @@ set
 boost/functional/hash.hpp
 -
 util/src/simfuncs.h
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/util/src/simfuncs.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/util/src/simfuncs.h
 util/src/input.h
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/util/src/input.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/util/src/input.h
 util/src/misc.h
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/util/src/misc.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/util/src/misc.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/partenum.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/partenum.h
 map
 -
 utility
@@ -132,7 +132,7 @@ vector
 tr1/unordered_map
 -
 util/src/appsearch.h
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/util/src/appsearch.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/util/src/appsearch.h
 util/src/gram.h
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/util/src/gram.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/util/src/gram.h
 

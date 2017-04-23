@@ -80,7 +80,7 @@ vector
 common/src/tr1_local.h
 ../util/src/common/src/tr1_local.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/partenum.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/partenum.h
 map
 -
 utility
@@ -90,11 +90,11 @@ vector
 tr1/unordered_map
 -
 util/src/appsearch.h
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/util/src/appsearch.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/util/src/appsearch.h
 util/src/gram.h
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/util/src/gram.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/util/src/gram.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/unittest.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/unittest.cc
 cassert
 -
 iostream
@@ -102,7 +102,7 @@ iostream
 vector
 -
 partenum.h
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/partenum.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/partenum.h
 util/src/output.h
-/home/jwu/Documents/Github/EECS405Project/test/src/partenum/src/util/src/output.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/src/util/src/output.h
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/jwu/Documents/Github/EECS405Project/test/src/partenum
+# Install script for directory: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jwu/Documents/Github/EECS405Project/test/src/util/cmake_install.cmake")
+  include("/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/cmake_install.cmake")
 
 endif()
 
@@ -44,7 +44,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "/home/jwu/Documents/Github/EECS405Project/test/src/partenum/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "/home/jwu/Documents/Github/EECS405Project/test/src/partenum/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()

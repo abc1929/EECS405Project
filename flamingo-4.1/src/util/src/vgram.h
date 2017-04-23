@@ -10,8 +10,8 @@
   Author: Rares Vernica <rares (at) ics.uci.edu>
 */
 
-#ifndef _gram_h_
-#define _gram_h_
+#ifndef _vgram_h_
+#define _vgram_h_
 
 #include <map>
 #include <set>

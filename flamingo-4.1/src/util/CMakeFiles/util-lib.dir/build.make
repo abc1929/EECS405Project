@@ -35,364 +35,364 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jwu/Documents/Github/EECS405Project/test/src/partenum
+CMAKE_SOURCE_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jwu/Documents/Github/EECS405Project/test/src/partenum
+CMAKE_BINARY_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum
 
 # Include any dependencies generated for this target.
-include /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/depend.make
+include /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/depend.make
 
 # Include the progress variables for this target.
-include /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/progress.make
+include /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
+include /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/appsearch.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/appsearch.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/appsearch.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/appsearch.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/appsearch.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/appsearch.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/appsearch.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/appsearch.cc > CMakeFiles/util-lib.dir/src/appsearch.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/appsearch.cc > CMakeFiles/util-lib.dir/src/appsearch.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/appsearch.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/appsearch.cc -o CMakeFiles/util-lib.dir/src/appsearch.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/appsearch.cc -o CMakeFiles/util-lib.dir/src/appsearch.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/array.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/array.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/array.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/array.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/array.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/array.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/array.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/array.cc > CMakeFiles/util-lib.dir/src/array.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/array.cc > CMakeFiles/util-lib.dir/src/array.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/array.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/array.cc -o CMakeFiles/util-lib.dir/src/array.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/array.cc -o CMakeFiles/util-lib.dir/src/array.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/gram.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/gram.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/gram.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/gram.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/gram.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/gram.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/gram.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/gram.cc > CMakeFiles/util-lib.dir/src/gram.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/gram.cc > CMakeFiles/util-lib.dir/src/gram.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/gram.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/gram.cc -o CMakeFiles/util-lib.dir/src/gram.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/gram.cc -o CMakeFiles/util-lib.dir/src/gram.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/input.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/input.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/input.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/input.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/input.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/input.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/input.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/input.cc > CMakeFiles/util-lib.dir/src/input.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/input.cc > CMakeFiles/util-lib.dir/src/input.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/input.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/input.cc -o CMakeFiles/util-lib.dir/src/input.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/input.cc -o CMakeFiles/util-lib.dir/src/input.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/io.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/io.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/io.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/io.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/io.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/io.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/io.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/io.cc > CMakeFiles/util-lib.dir/src/io.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/io.cc > CMakeFiles/util-lib.dir/src/io.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/io.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/io.cc -o CMakeFiles/util-lib.dir/src/io.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/io.cc -o CMakeFiles/util-lib.dir/src/io.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/looptimer.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/looptimer.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/looptimer.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/looptimer.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/looptimer.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/looptimer.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/looptimer.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/looptimer.cc > CMakeFiles/util-lib.dir/src/looptimer.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/looptimer.cc > CMakeFiles/util-lib.dir/src/looptimer.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/looptimer.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/looptimer.cc -o CMakeFiles/util-lib.dir/src/looptimer.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/looptimer.cc -o CMakeFiles/util-lib.dir/src/looptimer.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/misc.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/misc.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/misc.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/misc.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/misc.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/misc.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/misc.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/misc.cc > CMakeFiles/util-lib.dir/src/misc.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/misc.cc > CMakeFiles/util-lib.dir/src/misc.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/misc.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/misc.cc -o CMakeFiles/util-lib.dir/src/misc.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/misc.cc -o CMakeFiles/util-lib.dir/src/misc.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/output.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/output.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/output.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/output.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/output.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/output.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/output.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/output.cc > CMakeFiles/util-lib.dir/src/output.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/output.cc > CMakeFiles/util-lib.dir/src/output.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/output.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/output.cc -o CMakeFiles/util-lib.dir/src/output.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/output.cc -o CMakeFiles/util-lib.dir/src/output.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/querygrams.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/querygrams.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/querygrams.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/querygrams.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/querygrams.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/querygrams.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/querygrams.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/querygrams.cc > CMakeFiles/util-lib.dir/src/querygrams.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/querygrams.cc > CMakeFiles/util-lib.dir/src/querygrams.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/querygrams.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/querygrams.cc -o CMakeFiles/util-lib.dir/src/querygrams.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/querygrams.cc -o CMakeFiles/util-lib.dir/src/querygrams.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/querygroup.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_10)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/querygroup.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/querygroup.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/querygroup.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/querygroup.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/querygroup.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/querygroup.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/querygroup.cc > CMakeFiles/util-lib.dir/src/querygroup.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/querygroup.cc > CMakeFiles/util-lib.dir/src/querygroup.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/querygroup.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/querygroup.cc -o CMakeFiles/util-lib.dir/src/querygroup.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/querygroup.cc -o CMakeFiles/util-lib.dir/src/querygroup.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/range.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/range.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/range.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/range.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/range.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/range.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/range.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/range.cc > CMakeFiles/util-lib.dir/src/range.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/range.cc > CMakeFiles/util-lib.dir/src/range.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/range.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/range.cc -o CMakeFiles/util-lib.dir/src/range.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/range.cc -o CMakeFiles/util-lib.dir/src/range.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/scan.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/scan.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/scan.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/scan.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/scan.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/scan.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/scan.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/scan.cc > CMakeFiles/util-lib.dir/src/scan.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/scan.cc > CMakeFiles/util-lib.dir/src/scan.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/scan.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/scan.cc -o CMakeFiles/util-lib.dir/src/scan.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/scan.cc -o CMakeFiles/util-lib.dir/src/scan.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/simfuncs.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/simfuncs.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/simfuncs.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/simfuncs.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/simfuncs.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/simfuncs.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/simfuncs.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/simfuncs.cc > CMakeFiles/util-lib.dir/src/simfuncs.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/simfuncs.cc > CMakeFiles/util-lib.dir/src/simfuncs.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/simfuncs.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/simfuncs.cc -o CMakeFiles/util-lib.dir/src/simfuncs.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/simfuncs.cc -o CMakeFiles/util-lib.dir/src/simfuncs.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/stringshuffler.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_14)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/stringshuffler.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/stringshuffler.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/stringshuffler.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/stringshuffler.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/stringshuffler.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/stringshuffler.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/stringshuffler.cc > CMakeFiles/util-lib.dir/src/stringshuffler.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/stringshuffler.cc > CMakeFiles/util-lib.dir/src/stringshuffler.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/stringshuffler.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/stringshuffler.cc -o CMakeFiles/util-lib.dir/src/stringshuffler.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/stringshuffler.cc -o CMakeFiles/util-lib.dir/src/stringshuffler.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/util/src/time.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles $(CMAKE_PROGRESS_15)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/time.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/util/src/time.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/time.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/time.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/time.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.i: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/time.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/util/src/time.cc > CMakeFiles/util-lib.dir/src/time.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/time.cc > CMakeFiles/util-lib.dir/src/time.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.s: cmake_force
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/time.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/util/src/time.cc -o CMakeFiles/util-lib.dir/src/time.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/time.cc -o CMakeFiles/util-lib.dir/src/time.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o
 
 # Object files for target util-lib
 util__lib_OBJECTS = \
@@ -415,52 +415,52 @@ util__lib_OBJECTS = \
 # External object files for target util-lib
 util__lib_EXTERNAL_OBJECTS =
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make
-/home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/link.txt
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library build/libutil-lib.so"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/util-lib.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/util-lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build: /home/jwu/Documents/Github/EECS405Project/test/src/util/build/libutil-lib.so
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.requires
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o.requires
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/clean:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/util && $(CMAKE_COMMAND) -P CMakeFiles/util-lib.dir/cmake_clean.cmake
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/clean
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/clean:
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && $(CMAKE_COMMAND) -P CMakeFiles/util-lib.dir/cmake_clean.cmake
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/clean
 
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/depend:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jwu/Documents/Github/EECS405Project/test/src/partenum /home/jwu/Documents/Github/EECS405Project/test/src/util /home/jwu/Documents/Github/EECS405Project/test/src/partenum /home/jwu/Documents/Github/EECS405Project/test/src/util /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/depend
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/depend:
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/depend
 

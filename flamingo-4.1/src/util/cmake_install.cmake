@@ -1,4 +1,4 @@
-# Install script for directory: /home/jwu/Documents/Github/EECS405Project/test/src/util
+# Install script for directory: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

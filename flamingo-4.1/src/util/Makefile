@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jwu/Documents/Github/EECS405Project/test/src/partenum
+CMAKE_SOURCE_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jwu/Documents/Github/EECS405Project/test/src/partenum
+CMAKE_BINARY_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -73,14 +73,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(CMAKE_COMMAND) -E cmake_progress_start /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/progress.marks
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/test/src/util/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jwu/Documents/Github/EECS405Project/test/src/partenum/CMakeFiles 0
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(CMAKE_COMMAND) -E cmake_progress_start /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/progress.marks
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/test/src/util/clean
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/clean
 .PHONY : clean
 
 # The main clean target
@@ -89,45 +89,45 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/test/src/util/preinstall
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/test/src/util/preinstall
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/rule:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/rule
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/rule
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/rule:
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/rule
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/rule
 
 # Convenience name for target.
-unittest: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/rule
+unittest: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/rule
 .PHONY : unittest
 
 # fast build rule for target.
 unittest/fast:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/build
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build
 .PHONY : unittest/fast
 
 # Convenience name for target.
-/home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/rule:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/rule
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/rule
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/rule:
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/rule
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/rule
 
 # Convenience name for target.
-util-lib: /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/rule
+util-lib: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/rule
 .PHONY : util-lib
 
 # fast build rule for target.
 util-lib/fast:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build
 .PHONY : util-lib/fast
 
 src/appsearch.o: src/appsearch.cc.o
@@ -135,7 +135,7 @@ src/appsearch.o: src/appsearch.cc.o
 
 # target to build an object file
 src/appsearch.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o
 .PHONY : src/appsearch.cc.o
 
 src/appsearch.i: src/appsearch.cc.i
@@ -143,7 +143,7 @@ src/appsearch.i: src/appsearch.cc.i
 
 # target to preprocess a source file
 src/appsearch.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.i
 .PHONY : src/appsearch.cc.i
 
 src/appsearch.s: src/appsearch.cc.s
@@ -151,7 +151,7 @@ src/appsearch.s: src/appsearch.cc.s
 
 # target to generate assembly for a file
 src/appsearch.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.s
 .PHONY : src/appsearch.cc.s
 
 src/array.o: src/array.cc.o
@@ -159,7 +159,7 @@ src/array.o: src/array.cc.o
 
 # target to build an object file
 src/array.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o
 .PHONY : src/array.cc.o
 
 src/array.i: src/array.cc.i
@@ -167,7 +167,7 @@ src/array.i: src/array.cc.i
 
 # target to preprocess a source file
 src/array.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.i
 .PHONY : src/array.cc.i
 
 src/array.s: src/array.cc.s
@@ -175,7 +175,7 @@ src/array.s: src/array.cc.s
 
 # target to generate assembly for a file
 src/array.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/array.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.s
 .PHONY : src/array.cc.s
 
 src/gram.o: src/gram.cc.o
@@ -183,7 +183,7 @@ src/gram.o: src/gram.cc.o
 
 # target to build an object file
 src/gram.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o
 .PHONY : src/gram.cc.o
 
 src/gram.i: src/gram.cc.i
@@ -191,7 +191,7 @@ src/gram.i: src/gram.cc.i
 
 # target to preprocess a source file
 src/gram.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.i
 .PHONY : src/gram.cc.i
 
 src/gram.s: src/gram.cc.s
@@ -199,7 +199,7 @@ src/gram.s: src/gram.cc.s
 
 # target to generate assembly for a file
 src/gram.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/gram.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.s
 .PHONY : src/gram.cc.s
 
 src/input.o: src/input.cc.o
@@ -207,7 +207,7 @@ src/input.o: src/input.cc.o
 
 # target to build an object file
 src/input.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o
 .PHONY : src/input.cc.o
 
 src/input.i: src/input.cc.i
@@ -215,7 +215,7 @@ src/input.i: src/input.cc.i
 
 # target to preprocess a source file
 src/input.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.i
 .PHONY : src/input.cc.i
 
 src/input.s: src/input.cc.s
@@ -223,7 +223,7 @@ src/input.s: src/input.cc.s
 
 # target to generate assembly for a file
 src/input.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/input.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.s
 .PHONY : src/input.cc.s
 
 src/io.o: src/io.cc.o
@@ -231,7 +231,7 @@ src/io.o: src/io.cc.o
 
 # target to build an object file
 src/io.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o
 .PHONY : src/io.cc.o
 
 src/io.i: src/io.cc.i
@@ -239,7 +239,7 @@ src/io.i: src/io.cc.i
 
 # target to preprocess a source file
 src/io.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.i
 .PHONY : src/io.cc.i
 
 src/io.s: src/io.cc.s
@@ -247,7 +247,7 @@ src/io.s: src/io.cc.s
 
 # target to generate assembly for a file
 src/io.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/io.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.s
 .PHONY : src/io.cc.s
 
 src/looptimer.o: src/looptimer.cc.o
@@ -255,7 +255,7 @@ src/looptimer.o: src/looptimer.cc.o
 
 # target to build an object file
 src/looptimer.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o
 .PHONY : src/looptimer.cc.o
 
 src/looptimer.i: src/looptimer.cc.i
@@ -263,7 +263,7 @@ src/looptimer.i: src/looptimer.cc.i
 
 # target to preprocess a source file
 src/looptimer.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.i
 .PHONY : src/looptimer.cc.i
 
 src/looptimer.s: src/looptimer.cc.s
@@ -271,7 +271,7 @@ src/looptimer.s: src/looptimer.cc.s
 
 # target to generate assembly for a file
 src/looptimer.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.s
 .PHONY : src/looptimer.cc.s
 
 src/misc.o: src/misc.cc.o
@@ -279,7 +279,7 @@ src/misc.o: src/misc.cc.o
 
 # target to build an object file
 src/misc.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.o
 .PHONY : src/misc.cc.o
 
 src/misc.i: src/misc.cc.i
@@ -287,7 +287,7 @@ src/misc.i: src/misc.cc.i
 
 # target to preprocess a source file
 src/misc.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.i
 .PHONY : src/misc.cc.i
 
 src/misc.s: src/misc.cc.s
@@ -295,7 +295,7 @@ src/misc.s: src/misc.cc.s
 
 # target to generate assembly for a file
 src/misc.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/misc.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/misc.cc.s
 .PHONY : src/misc.cc.s
 
 src/output.o: src/output.cc.o
@@ -303,7 +303,7 @@ src/output.o: src/output.cc.o
 
 # target to build an object file
 src/output.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.o
 .PHONY : src/output.cc.o
 
 src/output.i: src/output.cc.i
@@ -311,7 +311,7 @@ src/output.i: src/output.cc.i
 
 # target to preprocess a source file
 src/output.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.i
 .PHONY : src/output.cc.i
 
 src/output.s: src/output.cc.s
@@ -319,7 +319,7 @@ src/output.s: src/output.cc.s
 
 # target to generate assembly for a file
 src/output.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/output.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/output.cc.s
 .PHONY : src/output.cc.s
 
 src/querygrams.o: src/querygrams.cc.o
@@ -327,7 +327,7 @@ src/querygrams.o: src/querygrams.cc.o
 
 # target to build an object file
 src/querygrams.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.o
 .PHONY : src/querygrams.cc.o
 
 src/querygrams.i: src/querygrams.cc.i
@@ -335,7 +335,7 @@ src/querygrams.i: src/querygrams.cc.i
 
 # target to preprocess a source file
 src/querygrams.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.i
 .PHONY : src/querygrams.cc.i
 
 src/querygrams.s: src/querygrams.cc.s
@@ -343,7 +343,7 @@ src/querygrams.s: src/querygrams.cc.s
 
 # target to generate assembly for a file
 src/querygrams.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygrams.cc.s
 .PHONY : src/querygrams.cc.s
 
 src/querygroup.o: src/querygroup.cc.o
@@ -351,7 +351,7 @@ src/querygroup.o: src/querygroup.cc.o
 
 # target to build an object file
 src/querygroup.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.o
 .PHONY : src/querygroup.cc.o
 
 src/querygroup.i: src/querygroup.cc.i
@@ -359,7 +359,7 @@ src/querygroup.i: src/querygroup.cc.i
 
 # target to preprocess a source file
 src/querygroup.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.i
 .PHONY : src/querygroup.cc.i
 
 src/querygroup.s: src/querygroup.cc.s
@@ -367,7 +367,7 @@ src/querygroup.s: src/querygroup.cc.s
 
 # target to generate assembly for a file
 src/querygroup.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/querygroup.cc.s
 .PHONY : src/querygroup.cc.s
 
 src/range.o: src/range.cc.o
@@ -375,7 +375,7 @@ src/range.o: src/range.cc.o
 
 # target to build an object file
 src/range.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.o
 .PHONY : src/range.cc.o
 
 src/range.i: src/range.cc.i
@@ -383,7 +383,7 @@ src/range.i: src/range.cc.i
 
 # target to preprocess a source file
 src/range.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.i
 .PHONY : src/range.cc.i
 
 src/range.s: src/range.cc.s
@@ -391,7 +391,7 @@ src/range.s: src/range.cc.s
 
 # target to generate assembly for a file
 src/range.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/range.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/range.cc.s
 .PHONY : src/range.cc.s
 
 src/scan.o: src/scan.cc.o
@@ -399,7 +399,7 @@ src/scan.o: src/scan.cc.o
 
 # target to build an object file
 src/scan.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.o
 .PHONY : src/scan.cc.o
 
 src/scan.i: src/scan.cc.i
@@ -407,7 +407,7 @@ src/scan.i: src/scan.cc.i
 
 # target to preprocess a source file
 src/scan.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.i
 .PHONY : src/scan.cc.i
 
 src/scan.s: src/scan.cc.s
@@ -415,7 +415,7 @@ src/scan.s: src/scan.cc.s
 
 # target to generate assembly for a file
 src/scan.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/scan.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/scan.cc.s
 .PHONY : src/scan.cc.s
 
 src/simfuncs.o: src/simfuncs.cc.o
@@ -423,7 +423,7 @@ src/simfuncs.o: src/simfuncs.cc.o
 
 # target to build an object file
 src/simfuncs.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.o
 .PHONY : src/simfuncs.cc.o
 
 src/simfuncs.i: src/simfuncs.cc.i
@@ -431,7 +431,7 @@ src/simfuncs.i: src/simfuncs.cc.i
 
 # target to preprocess a source file
 src/simfuncs.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.i
 .PHONY : src/simfuncs.cc.i
 
 src/simfuncs.s: src/simfuncs.cc.s
@@ -439,7 +439,7 @@ src/simfuncs.s: src/simfuncs.cc.s
 
 # target to generate assembly for a file
 src/simfuncs.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/simfuncs.cc.s
 .PHONY : src/simfuncs.cc.s
 
 src/stringshuffler.o: src/stringshuffler.cc.o
@@ -447,7 +447,7 @@ src/stringshuffler.o: src/stringshuffler.cc.o
 
 # target to build an object file
 src/stringshuffler.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.o
 .PHONY : src/stringshuffler.cc.o
 
 src/stringshuffler.i: src/stringshuffler.cc.i
@@ -455,7 +455,7 @@ src/stringshuffler.i: src/stringshuffler.cc.i
 
 # target to preprocess a source file
 src/stringshuffler.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.i
 .PHONY : src/stringshuffler.cc.i
 
 src/stringshuffler.s: src/stringshuffler.cc.s
@@ -463,7 +463,7 @@ src/stringshuffler.s: src/stringshuffler.cc.s
 
 # target to generate assembly for a file
 src/stringshuffler.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/stringshuffler.cc.s
 .PHONY : src/stringshuffler.cc.s
 
 src/time.o: src/time.cc.o
@@ -471,7 +471,7 @@ src/time.o: src/time.cc.o
 
 # target to build an object file
 src/time.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.o
 .PHONY : src/time.cc.o
 
 src/time.i: src/time.cc.i
@@ -479,7 +479,7 @@ src/time.i: src/time.cc.i
 
 # target to preprocess a source file
 src/time.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.i
 .PHONY : src/time.cc.i
 
 src/time.s: src/time.cc.s
@@ -487,7 +487,7 @@ src/time.s: src/time.cc.s
 
 # target to generate assembly for a file
 src/time.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/util-lib.dir/src/time.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.s
 .PHONY : src/time.cc.s
 
 src/unittest.o: src/unittest.cc.o
@@ -495,7 +495,7 @@ src/unittest.o: src/unittest.cc.o
 
 # target to build an object file
 src/unittest.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o
 .PHONY : src/unittest.cc.o
 
 src/unittest.i: src/unittest.cc.i
@@ -503,7 +503,7 @@ src/unittest.i: src/unittest.cc.i
 
 # target to preprocess a source file
 src/unittest.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.i
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.i
 .PHONY : src/unittest.cc.i
 
 src/unittest.s: src/unittest.cc.s
@@ -511,7 +511,7 @@ src/unittest.s: src/unittest.cc.s
 
 # target to generate assembly for a file
 src/unittest.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/util/CMakeFiles/unittest.dir/src/unittest.cc.s
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.s
 .PHONY : src/unittest.cc.s
 
 # Help Target
@@ -583,6 +583,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/partenum && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
