@@ -8,6 +8,14 @@
 - Project Proposal Doc Link
 
     https://docs.google.com/a/case.edu/document/d/1ce6vuLw5kdqOkJTQyyosDhLAyFHRz5rd7_IzUY_loTY/edit?usp=sharing
+    
+- Slides Link
+
+    https://docs.google.com/a/case.edu/presentation/d/1FM9VnxJl7OQfXRck_P2PTZ7GssVlW_CFyc2w7YC3kA8/edit?usp=sharing
+    
+- Final Report Link
+
+    https://docs.google.com/a/case.edu/document/d/1lJvlWkciqFMKw2EBmRrvl2egZu8GpYhrRQA6kWP0hB4/edit?usp=sharing
 
 
 ## Project Report Initiatives
