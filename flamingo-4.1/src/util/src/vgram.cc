@@ -321,17 +321,17 @@ void vGramId::pruneGetIds(const string &s, vector<unsigned> &ids,
 GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists){
   vector<vector<unsigned>> gs;
   vector<unsigned> grms;
-  for(auto z = qmin; z <= qmax; z++) {
+  for(unsigned z = qmin; z <= qmax; z++) {
     vector<unsigned> temp;
     str2grams(s, temp, z);
     gs.push_back(temp);
   }
   grms.resize(gs.at(0).size());
 
-  for(auto w = 0; w < gs.at(0).size(); w++){
+  for(unsigned w = 0; w < gs.at(0).size(); w++){
 
   // priority for longest gram
-    for(auto z = qmax-qmin; z >= 0; z--) {
+    for(unsigned z = qmax-qmin; z >= 0; z--) {
 
     // if(freqLenLists.find(gs.at(z)[w]) == freqLenLists.end()
     // ) {
@@ -377,21 +377,21 @@ GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists) const
 {
   vector<vector<unsigned>> gs;
   vector<unsigned> grms;
-  for(auto z = qmin; z <= qmax; z++) {
+  for(unsigned z = qmin; z <= qmax; z++) {
     vector<unsigned> temp;
     str2grams(s, temp, z);
     gs.push_back(temp);
   }
   grms.resize(gs.at(0).size());
 
-  for(auto w = 0; w < gs.at(0).size(); w++){   
+  for(unsigned w = 0; w < gs.at(0).size(); w++){   
   // priority for longest gram
     if(idLists.find(gs.at(0)[w]) == idLists.end()){
       grms.push_back(gs.at(z)[w]); // query string somehow doesn't have some qmin gram.
       break;
     }
 
-    for(auto z = qmax-qmin; z >= 0; z--) {
+    for(unsigned z = qmax-qmin; z >= 0; z--) {
       if(freqLenLists[gs.at(0)[w]].at(1) <= rareqminFreq || z == 0) { //not sure how good rarefreq is, make it small just to be safe
         grms.push_back(gs.at(0)[w]);
         break;

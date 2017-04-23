@@ -27,7 +27,7 @@ using namespace std;
 using namespace tr1;
 
 typedef unordered_map <unsigned, Array<unsigned>*> GramListMap;
-typedef unordered_map <string, Array<vector<unsigned>>*> StringGramPos;
+typedef unordered_map <string, Array< vector<unsigned> >*> StringGramPos;
 // typedef map <unsigned, Array<unsigned>*> vGramListMap;
 
 const unsigned char PREFIXCHAR = 156; // pound

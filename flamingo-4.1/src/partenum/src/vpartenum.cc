@@ -1,9 +1,9 @@
 /*
-  $Id: vPartEnum.cc 5769 2010-10-19 06:17:00Z abehm $
+  $Id: PartEnum.cc 5769 2010-10-19 06:17:00Z abehm $
 
   Copyright (C) 2007 by The Regents of the University of California
  
-  The implementation of the vPartEnum algorithm invented by Microsoft
+  The implementation of the PartEnum algorithm invented by Microsoft
   researchers is limited to non commercial use, which would be covered
   under the royalty free covenant that Microsoft made public.
 
@@ -49,9 +49,9 @@ vPartEnum::vPartEnum(const vector<string> &data,
   siglen(subs.size() * n1), 
   buckets(new SigsBucket[siglen]),
   idL(new GramListMap[]),
-  posL(new GramListMap[]),
+  posL(new StringGramPos[]),
   freqLenL(new GramListMap[]),
-  nag(new unordered_map <string, vector<unsigned>>)
+  nag(new unordered_map <string, vector<unsigned> >)
 {
   if (siglen > siglenMax) {
     cerr << "siglen " << siglen << " greater than siglenMax " << siglenMax << endl;
@@ -417,26 +417,27 @@ void vPartEnum::search(const string &query, const unsigned editdist,
 
 //----------------------------------VGRAM specific stuff Starts-----------------------------------//
 
-void vPartEnum::NAG(const string &s, unsigned maxk, unordered_map <string, vector<unsigned>> &nag) 
+void vPartEnum::NAG(const string &s, unsigned maxk, unordered_map <string, vector<unsigned> > &nag) 
 {
   vector<unsigned> ids;
   vector<unsigned> nagsi;
   nagsi.resize(s.length() * 2 + 1);
 
   if(nag.find(s) == nag.end()){
-      for(j = 0; j < s.length(); j++){
-      auto x = posL[s][j][1]; //position
-      for(auto i = x * 2 ; i <= (x + freqLenL[posL[s][j]].at(0)) * 2 + 2; i++){
-        if(i>s.length() * 2 + 1)
+      for(unsigned j = 0; j < s.length(); j++){
+      unsigned x = posL[s][j][1]; //position
+      for(unsigned i = x * 2 ; i <= (x + freqLenL[posL[s][j]].at(0)) * 2 + 2; i++){
+        if(i > s.length() * 2 + 1){
           break;
+        }
         nagsi[i]++;
       }
     }
   }
   sort(nagsi.begin(),nagsi.end(),[](unsigned a, unsigned b) { return a > b; });
-  for(auto i = 1; i <= maxk; i++){
+  for(unsigned i = 1; i <= maxk; i++){
     unsigned temp = 0;
-    for(auto j = 1; j <= i){
+    for(unsigned j = 1; j <= i){
       temp+=nagsi[j-1]
     }
     nag[s].push_back[temp];
@@ -452,8 +453,8 @@ bool vPartEnum::VGRAMDistance(const string &s1, const string &s2, unsigned thres
   vgramId.pruneGetIds(s1, ids1 ,idL, posL, freqLenL);
   vgramId.pruneGetIds(s2, ids2 ,idL, posL, freqLenL);
 
-  auto l1 = ids1.size();
-  auto l2 = ids2.size();
+  unsigned l1 = ids1.size();
+  unsigned l2 = ids2.size();
   vector<unsigned> res(l1+l2);
 
   sort(ids1.begin(),ids1.end());
@@ -463,7 +464,7 @@ bool vPartEnum::VGRAMDistance(const string &s1, const string &s2, unsigned thres
   it = set_intersection (ids1.begin(),ids1.end(), ids2.begin(),ids2.end(), res.begin());
   res.resize(it-res.begin());
 
-  return res.size()-(l1+l2-threshold)/2 >= 0;
+  return (res.size()-(l1+l2-threshold)/2 >= 0);
 
 }
 

@@ -51,10 +51,10 @@ public:
 
   void search(const string &query, vector<unsigned> &results);
   void search(const string &query, const unsigned editdist, vector<unsigned> &results);
-  void vPartEnum::vsearch(const string &query, vector<unsigned> &results);
-  void vPartEnum::vsearch(const string &query, const unsigned editdist, vector<unsigned> &results);
+  void vsearch(const string &query, vector<unsigned> &results);
+  void vsearch(const string &query, const unsigned editdist, vector<unsigned> &results);
 
-  void NAG(const string &s, unsigned maxk, unordered_map <string, vector<unsigned>> &nag); 
+  void NAG(const string &s, unsigned maxk, unordered_map <string, vector<unsigned> > &nag); 
   bool VGRAMDistance(const string &s1, const string &s2, unsigned threshold);
 
   ~vPartEnum();
@@ -79,6 +79,12 @@ private:
   const vector<string> *data;
   vGramId vgramId;
   unsigned k, k2, n1, n2;
+
+  GramListMap idL;
+  StringGramPos posL;
+  GramListMap freqLenL;
+  unordered_map <string, vector<unsigned> > nag;
+
   vector<vector<unsigned> > subs;
   unsigned datalen, siglen;
   SigsBucket *buckets;
