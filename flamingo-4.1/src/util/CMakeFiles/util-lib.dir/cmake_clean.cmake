@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/util-lib.dir/src/appsearch.cc.o"
   "CMakeFiles/util-lib.dir/src/array.cc.o"
-  "CMakeFiles/util-lib.dir/src/gram.cc.o"
+  "CMakeFiles/util-lib.dir/src/vgram.cc.o"
   "CMakeFiles/util-lib.dir/src/input.cc.o"
   "CMakeFiles/util-lib.dir/src/io.cc.o"
   "CMakeFiles/util-lib.dir/src/looptimer.cc.o"

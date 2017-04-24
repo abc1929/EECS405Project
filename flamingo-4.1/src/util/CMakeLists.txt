@@ -9,7 +9,8 @@ endif()
 set(UTIL_LIB_SRC 
   src/appsearch.cc 
   src/array.cc
-  src/gram.cc
+  #src/gram.cc
+  src/vgram.cc
   src/input.cc
   src/io.cc
   src/looptimer.cc
@@ -24,9 +25,9 @@ set(UTIL_LIB_SRC
   src/time.cc 
 )
 
-set(UTIL_UNITTEST_EXEC_SRC
-  src/unittest.cc
-)
+#set(UTIL_UNITTEST_EXEC_SRC
+#  src/unittest.cc
+#)
 
 include_directories (
   include
@@ -37,13 +38,13 @@ include_directories (
 
 link_directories (${CMAKE_BINARY_DIR}/) 
 
-add_definitions(-Wall -O3 -Wno-unused)
+add_definitions(-Wall -std=c++03 -Wno-unused)
 add_library(util-lib SHARED ${UTIL_LIB_SRC})
 target_link_libraries(util-lib ${OS_DEPENDENT_LIBS} ${CMAKE_REQUIRED_LIBRARIES})
 
-add_executable(unittest ${UTIL_UNITTEST_EXEC_SRC})
-add_dependencies(unittest util-lib)
-target_link_libraries(unittest util-lib) 
+#add_executable(unittest ${UTIL_UNITTEST_EXEC_SRC})
+#add_dependencies(unittest util-lib)
+#target_link_libraries(unittest util-lib) 
 
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS}")
 

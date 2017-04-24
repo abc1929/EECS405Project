@@ -103,58 +103,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named example_partenum
-
-# Build rule for target.
-example_partenum: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 example_partenum
-.PHONY : example_partenum
-
-# fast build rule for target.
-example_partenum/fast:
-	$(MAKE) -f CMakeFiles/example_partenum.dir/build.make CMakeFiles/example_partenum.dir/build
-.PHONY : example_partenum/fast
-
-#=============================================================================
-# Target rules for targets named example_vpartenum
-
-# Build rule for target.
-example_vpartenum: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 example_vpartenum
-.PHONY : example_vpartenum
-
-# fast build rule for target.
-example_vpartenum/fast:
-	$(MAKE) -f CMakeFiles/example_vpartenum.dir/build.make CMakeFiles/example_vpartenum.dir/build
-.PHONY : example_vpartenum/fast
-
-#=============================================================================
-# Target rules for targets named partenum-lib
-
-# Build rule for target.
-partenum-lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 partenum-lib
-.PHONY : partenum-lib
-
-# fast build rule for target.
-partenum-lib/fast:
-	$(MAKE) -f CMakeFiles/partenum-lib.dir/build.make CMakeFiles/partenum-lib.dir/build
-.PHONY : partenum-lib/fast
-
-#=============================================================================
-# Target rules for targets named unittest_partenum
-
-# Build rule for target.
-unittest_partenum: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 unittest_partenum
-.PHONY : unittest_partenum
-
-# fast build rule for target.
-unittest_partenum/fast:
-	$(MAKE) -f CMakeFiles/unittest_partenum.dir/build.make CMakeFiles/unittest_partenum.dir/build
-.PHONY : unittest_partenum/fast
-
-#=============================================================================
 # Target rules for targets named vpartenum-lib
 
 # Build rule for target.
@@ -168,19 +116,6 @@ vpartenum-lib/fast:
 .PHONY : vpartenum-lib/fast
 
 #=============================================================================
-# Target rules for targets named unittest
-
-# Build rule for target.
-unittest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 unittest
-.PHONY : unittest
-
-# fast build rule for target.
-unittest/fast:
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build
-.PHONY : unittest/fast
-
-#=============================================================================
 # Target rules for targets named util-lib
 
 # Build rule for target.
@@ -192,102 +127,6 @@ util-lib: cmake_check_build_system
 util-lib/fast:
 	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build
 .PHONY : util-lib/fast
-
-src/example.o: src/example.cc.o
-.PHONY : src/example.o
-
-# target to build an object file
-src/example.cc.o:
-	$(MAKE) -f CMakeFiles/example_partenum.dir/build.make CMakeFiles/example_partenum.dir/src/example.cc.o
-.PHONY : src/example.cc.o
-
-src/example.i: src/example.cc.i
-.PHONY : src/example.i
-
-# target to preprocess a source file
-src/example.cc.i:
-	$(MAKE) -f CMakeFiles/example_partenum.dir/build.make CMakeFiles/example_partenum.dir/src/example.cc.i
-.PHONY : src/example.cc.i
-
-src/example.s: src/example.cc.s
-.PHONY : src/example.s
-
-# target to generate assembly for a file
-src/example.cc.s:
-	$(MAKE) -f CMakeFiles/example_partenum.dir/build.make CMakeFiles/example_partenum.dir/src/example.cc.s
-.PHONY : src/example.cc.s
-
-src/partenum.o: src/partenum.cc.o
-.PHONY : src/partenum.o
-
-# target to build an object file
-src/partenum.cc.o:
-	$(MAKE) -f CMakeFiles/partenum-lib.dir/build.make CMakeFiles/partenum-lib.dir/src/partenum.cc.o
-.PHONY : src/partenum.cc.o
-
-src/partenum.i: src/partenum.cc.i
-.PHONY : src/partenum.i
-
-# target to preprocess a source file
-src/partenum.cc.i:
-	$(MAKE) -f CMakeFiles/partenum-lib.dir/build.make CMakeFiles/partenum-lib.dir/src/partenum.cc.i
-.PHONY : src/partenum.cc.i
-
-src/partenum.s: src/partenum.cc.s
-.PHONY : src/partenum.s
-
-# target to generate assembly for a file
-src/partenum.cc.s:
-	$(MAKE) -f CMakeFiles/partenum-lib.dir/build.make CMakeFiles/partenum-lib.dir/src/partenum.cc.s
-.PHONY : src/partenum.cc.s
-
-src/test.o: src/test.cc.o
-.PHONY : src/test.o
-
-# target to build an object file
-src/test.cc.o:
-	$(MAKE) -f CMakeFiles/example_vpartenum.dir/build.make CMakeFiles/example_vpartenum.dir/src/test.cc.o
-.PHONY : src/test.cc.o
-
-src/test.i: src/test.cc.i
-.PHONY : src/test.i
-
-# target to preprocess a source file
-src/test.cc.i:
-	$(MAKE) -f CMakeFiles/example_vpartenum.dir/build.make CMakeFiles/example_vpartenum.dir/src/test.cc.i
-.PHONY : src/test.cc.i
-
-src/test.s: src/test.cc.s
-.PHONY : src/test.s
-
-# target to generate assembly for a file
-src/test.cc.s:
-	$(MAKE) -f CMakeFiles/example_vpartenum.dir/build.make CMakeFiles/example_vpartenum.dir/src/test.cc.s
-.PHONY : src/test.cc.s
-
-src/unittest.o: src/unittest.cc.o
-.PHONY : src/unittest.o
-
-# target to build an object file
-src/unittest.cc.o:
-	$(MAKE) -f CMakeFiles/unittest_partenum.dir/build.make CMakeFiles/unittest_partenum.dir/src/unittest.cc.o
-.PHONY : src/unittest.cc.o
-
-src/unittest.i: src/unittest.cc.i
-.PHONY : src/unittest.i
-
-# target to preprocess a source file
-src/unittest.cc.i:
-	$(MAKE) -f CMakeFiles/unittest_partenum.dir/build.make CMakeFiles/unittest_partenum.dir/src/unittest.cc.i
-.PHONY : src/unittest.cc.i
-
-src/unittest.s: src/unittest.cc.s
-.PHONY : src/unittest.s
-
-# target to generate assembly for a file
-src/unittest.cc.s:
-	$(MAKE) -f CMakeFiles/unittest_partenum.dir/build.make CMakeFiles/unittest_partenum.dir/src/unittest.cc.s
-.PHONY : src/unittest.cc.s
 
 src/vpartenum.o: src/vpartenum.cc.o
 .PHONY : src/vpartenum.o
@@ -320,26 +159,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... example_partenum"
-	@echo "... example_vpartenum"
-	@echo "... partenum-lib"
 	@echo "... rebuild_cache"
-	@echo "... unittest_partenum"
 	@echo "... vpartenum-lib"
-	@echo "... unittest"
 	@echo "... util-lib"
-	@echo "... src/example.o"
-	@echo "... src/example.i"
-	@echo "... src/example.s"
-	@echo "... src/partenum.o"
-	@echo "... src/partenum.i"
-	@echo "... src/partenum.s"
-	@echo "... src/test.o"
-	@echo "... src/test.i"
-	@echo "... src/test.s"
-	@echo "... src/unittest.o"
-	@echo "... src/unittest.i"
-	@echo "... src/unittest.s"
 	@echo "... src/vpartenum.o"
 	@echo "... src/vpartenum.i"
 	@echo "... src/vpartenum.s"

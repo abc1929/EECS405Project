@@ -27,7 +27,8 @@ using namespace std;
 using namespace tr1;
 
 typedef unordered_map <unsigned, Array<unsigned>*> GramListMap;
-typedef unordered_map <string, Array< vector<unsigned> >*> StringGramPos;
+typedef unordered_map <string, Array<vector<unsigned> >*> StringGramPos;
+typedef unordered_map <string, vector<unsigned> > NagMap;
 // typedef map <unsigned, Array<unsigned>*> vGramListMap;
 
 const unsigned char PREFIXCHAR = 156; // pound
@@ -37,50 +38,47 @@ extern hash<string> hashString;
 
 // convert a string to a BAG of grams
 void str2grams(const string &s, vector<string> &res,
-               unsigned qmin = 3, unsigned qmax = 3,
+               unsigned q = 3,
                unsigned char st = PREFIXCHAR, unsigned char en = SUFFIXCHAR);
 
 // convert a string to a BAG of hashed grams
 void str2grams(const string &s, vector<unsigned> &res, 
-               unsigned qmin = 3, unsigned qmax = 3,
+               unsigned q = 3,
                unsigned char st = PREFIXCHAR, unsigned char en = SUFFIXCHAR); 
 
 // convert a string to a BAG (multiset) of grams
 void str2grams(const string &s, multiset<string> &res, 
-               unsigned qmin = 3, unsigned qmax = 3,
+               unsigned q = 3,
                unsigned char st = PREFIXCHAR, unsigned char en = SUFFIXCHAR);
 
 // convert a string to a BAG (multiset) of hashed grams
 void str2grams(const string &s, multiset<unsigned> &res, 
-               unsigned qmin = 3, unsigned qmax = 3,
+               unsigned q = 3,
                unsigned char st = PREFIXCHAR, unsigned char en = SUFFIXCHAR);
 
 // convert a string to a SET of grams
 void str2grams(const string &s, set<string> &res, 
-               unsigned qmin = 3, unsigned qmax = 3,
+               unsigned q = 3,
                unsigned char st = PREFIXCHAR, unsigned char en = SUFFIXCHAR);
 
 // convert a string to a SET of hashed grams
 void str2grams(const string &s, set<unsigned> &res, 
-               unsigned qmin = 3, unsigned qmax = 3,
+               unsigned q = 3,
                unsigned char st = PREFIXCHAR, unsigned char en = SUFFIXCHAR);
 
 // convert a string to a SET of hashed grams with count
 void str2grams(const string &s, map<unsigned, unsigned> &res,
-               unsigned qmin = 3, unsigned qmax = 3, 
+               unsigned q = 3, 
                unsigned char st = PREFIXCHAR, unsigned char en = SUFFIXCHAR);
 
 // convert a string to a BAG of hashed grams without prefix and postfix 
-void str2gramsNoPrePost(const string &s, vector<unsigned> &res, 
-                            unsigned qmin = 3, unsigned qmax = 3);
+void str2gramsNoPrePost(const string &s, vector<unsigned> &res,  unsigned q);
 
 // convert a string to a SET of grams without prefix and postfix
-void str2gramsNoPrePost(const string &s, set<string> &res, 
-                        unsigned qmin = 3, unsigned qmax = 3);
+void str2gramsNoPrePost(const string &s, set<string> &res, unsigned q);
 
 // convert a string to a SET of hashed grams without prefix and postfix 
-void str2gramsNoPrePost(const string &s, set<unsigned> &res, 
-                        unsigned qmin = 3,unsigned qmax = 3);
+void str2gramsNoPrePost(const string &s, set<unsigned> &res,  unsigned q);
 
 // in the future, if we want to add positional information, we can 
 // just change the type of "string" to "pair<string, unsigned>"
@@ -111,10 +109,10 @@ void id2gram(unsigned id, string &res,
 
 extern hash<string> hashString;
 
-class vGramId                    // grams as IDs in a vector with all possible grams
+class VGramID                    // grams as IDs in a vector with all possible grams
 {
 public:
-  vGramId(unsigned qmin = 3,
+  VGramID(unsigned qmin = 3,
          unsigned qmax = 3,
          unsigned q = 3,
          char st = PREFIXCHAR,
@@ -123,7 +121,7 @@ public:
          bool withPerm = true,
          unsigned rqf = 1
          );
-  vGramId(const string &filenamePreffix);
+  VGramID(const string &filenamePreffix);
 
   void saveData(const string &filenamePreffix) const;
 
@@ -137,14 +135,15 @@ public:
   void pruneGetIds(const string &s, vector<unsigned> &ids, 
   GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists);
 
-  void getIds(const string &s, vector<unsigned> &ids) const;
+  void getIds(const string &s, vector<unsigned> &ids
+  ,GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists) const;
   // convert string to list of gram IDs
   void getGrams(const vector<unsigned> &ids, vector<string> &grams) const;
   // convert list of gram IDs to list of grams
 
   bool consistData(const string &filenamePrefix, const string &filenameExt) const;
 
-  bool operator==(const vGramId& g) const;
+  bool operator==(const VGramID& g) const;
 
   static const string charsetEn; // English character
 

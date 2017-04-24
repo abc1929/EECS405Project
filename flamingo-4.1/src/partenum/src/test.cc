@@ -25,7 +25,7 @@ int main()
 
 
 
-  vPartEnum h(data, qmin, qmax, editdist, n1, n2 ,rqf);
+  VPartEnum h(data, qmin, qmax, editdist, n1, n2 ,rqf);
 
   // 1. pre-processing (generate signatures)
 

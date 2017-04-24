@@ -103,20 +103,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/rule:
-	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/rule
-.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/rule
-
-# Convenience name for target.
-unittest: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/rule
-.PHONY : unittest
-
-# fast build rule for target.
-unittest/fast:
-	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build
-.PHONY : unittest/fast
-
-# Convenience name for target.
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/rule:
 	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/rule
 .PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/rule
@@ -177,30 +163,6 @@ src/array.s: src/array.cc.s
 src/array.cc.s:
 	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.s
 .PHONY : src/array.cc.s
-
-src/gram.o: src/gram.cc.o
-.PHONY : src/gram.o
-
-# target to build an object file
-src/gram.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o
-.PHONY : src/gram.cc.o
-
-src/gram.i: src/gram.cc.i
-.PHONY : src/gram.i
-
-# target to preprocess a source file
-src/gram.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.i
-.PHONY : src/gram.cc.i
-
-src/gram.s: src/gram.cc.s
-.PHONY : src/gram.s
-
-# target to generate assembly for a file
-src/gram.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.s
-.PHONY : src/gram.cc.s
 
 src/input.o: src/input.cc.o
 .PHONY : src/input.o
@@ -490,29 +452,29 @@ src/time.cc.s:
 	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/time.cc.s
 .PHONY : src/time.cc.s
 
-src/unittest.o: src/unittest.cc.o
-.PHONY : src/unittest.o
+src/vgram.o: src/vgram.cc.o
+.PHONY : src/vgram.o
 
 # target to build an object file
-src/unittest.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.o
-.PHONY : src/unittest.cc.o
+src/vgram.cc.o:
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o
+.PHONY : src/vgram.cc.o
 
-src/unittest.i: src/unittest.cc.i
-.PHONY : src/unittest.i
+src/vgram.i: src/vgram.cc.i
+.PHONY : src/vgram.i
 
 # target to preprocess a source file
-src/unittest.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.i
-.PHONY : src/unittest.cc.i
+src/vgram.cc.i:
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.i
+.PHONY : src/vgram.cc.i
 
-src/unittest.s: src/unittest.cc.s
-.PHONY : src/unittest.s
+src/vgram.s: src/vgram.cc.s
+.PHONY : src/vgram.s
 
 # target to generate assembly for a file
-src/unittest.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/unittest.dir/src/unittest.cc.s
-.PHONY : src/unittest.cc.s
+src/vgram.cc.s:
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.s
+.PHONY : src/vgram.cc.s
 
 # Help Target
 help:
@@ -522,7 +484,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... unittest"
 	@echo "... util-lib"
 	@echo "... src/appsearch.o"
 	@echo "... src/appsearch.i"
@@ -530,9 +491,6 @@ help:
 	@echo "... src/array.o"
 	@echo "... src/array.i"
 	@echo "... src/array.s"
-	@echo "... src/gram.o"
-	@echo "... src/gram.i"
-	@echo "... src/gram.s"
 	@echo "... src/input.o"
 	@echo "... src/input.i"
 	@echo "... src/input.s"
@@ -569,9 +527,9 @@ help:
 	@echo "... src/time.o"
 	@echo "... src/time.i"
 	@echo "... src/time.s"
-	@echo "... src/unittest.o"
-	@echo "... src/unittest.i"
-	@echo "... src/unittest.s"
+	@echo "... src/vgram.o"
+	@echo "... src/vgram.i"
+	@echo "... src/vgram.s"
 .PHONY : help
 
 

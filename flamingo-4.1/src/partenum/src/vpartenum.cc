@@ -32,14 +32,14 @@
 
 using namespace std;
 
-const unsigned vPartEnum::siglenMax = 100;
-const string vPartEnum::paramSuffix = ".pe.param.bin";
-const string vPartEnum::signSuffix = ".pe.sign.bin";
+const unsigned VPartEnum::siglenMax = 100;
+const string VPartEnum::paramSuffix = ".pe.param.bin";
+const string VPartEnum::signSuffix = ".pe.sign.bin";
 
-vPartEnum::vPartEnum(const vector<string> &data, 
+VPartEnum::VPartEnum(const vector<string> &data, 
                    unsigned qmin, unsigned qmax, unsigned editdist, unsigned n1, unsigned n2, unsigned rqf):
   data(&data),
-  vgramId(vGramId(qmin,qmax,rqf)),
+  vGramID(VGramID(qmin,qmax,rqf)),
   k(2 * editdist *  qmax),
   k2((k + 1) / n1 - 1),
   n1(n1),
@@ -48,10 +48,10 @@ vPartEnum::vPartEnum(const vector<string> &data,
   datalen(this->data->size()), 
   siglen(subs.size() * n1), 
   buckets(new SigsBucket[siglen]),
-  idL(new GramListMap[]),
-  posL(new StringGramPos[]),
-  freqLenL(new GramListMap[]),
-  nag(new unordered_map <string, vector<unsigned> >)
+  idL(GramListMap()),
+  posL(StringGramPos()),
+  freqLenL(GramListMap()),
+  nag(NagMap()) 
 {
   if (siglen > siglenMax) {
     cerr << "siglen " << siglen << " greater than siglenMax " << siglenMax << endl;
@@ -59,15 +59,15 @@ vPartEnum::vPartEnum(const vector<string> &data,
   }
 }
 
-vPartEnum::vPartEnum(const vector<string> &data, const string &filenamePrefix):
+VPartEnum::VPartEnum(const vector<string> &data, const string &filenamePrefix):
   data(&data),
-  vgramId(vGramId(filenamePrefix)),
+  vGramID(VGramID(filenamePrefix)),
   datalen(this->data->size())
 {
   loadIndex(filenamePrefix);
 }
 
-vPartEnum::~vPartEnum() 
+VPartEnum::~VPartEnum() 
 {
   for (unsigned i = 0; i < siglen; i++)
     for (SigsBucket::const_iterator it = buckets[i].begin();
@@ -76,14 +76,14 @@ vPartEnum::~vPartEnum()
   delete[] buckets;
 }
 
-void vPartEnum::build() 
+void VPartEnum::build() 
 {
   // sign
   cerr << "sign";
   unsigned *sigs = new unsigned[datalen * siglen];
   unsigned i = 0;
   // building grams dictionary 
-  createIdPosInvertedLists(*data, 1, idL, posL, freqLenL, qmin, qmax);
+  createIdPosInvertedLists(*data, 1, idL, freqLenL, qmin, qmax);
   for (vector<string>::const_iterator it = data->begin(); 
        it != data->end(); ++it) {
     if (i % 10000 == 0) {
@@ -149,15 +149,15 @@ void vPartEnum::build()
   cerr << "OK" << endl;
   
   delete[] sigs;
-  delete[] idL;
-  delete[] posL;
-  delete[] freqLenL;
+  delete[] &idL;
+  delete[] &posL;
+  delete[] &freqLenL;
 }
 
-void vPartEnum::saveIndex(const string &filenamePrefix) const
+void VPartEnum::saveIndex(const string &filenamePrefix) const
 {
   // save gramid
-  vgramId.saveData(filenamePrefix);
+  this->vGramID.saveData(filenamePrefix);
 
   // save param
   string filenameParam = filenamePrefix + paramSuffix;
@@ -227,7 +227,7 @@ void vPartEnum::saveIndex(const string &filenamePrefix) const
   cerr << "OK" << endl;
 }
 
-void vPartEnum::loadIndex(const string &filenamePerfix)
+void VPartEnum::loadIndex(const string &filenamePerfix)
 {
   if (!consistIndex(filenamePerfix)) {
     cerr << "index files are not consistent" << endl;
@@ -312,12 +312,12 @@ void vPartEnum::loadIndex(const string &filenamePerfix)
   cerr << "OK" << endl;
 }
 
-bool vPartEnum::consistIndex(const string &filenamePrefix) const
+bool VPartEnum::consistIndex(const string &filenamePrefix) const
 {
   string filenameParam = filenamePrefix + paramSuffix;
   string filenameSign = filenamePrefix + signSuffix;
 
-  if (!vgramId.consistData(filenamePrefix, filenameParam))
+  if (!this->vGramID.consistData(filenamePrefix, filenameParam))
     return false;
 
   struct stat attribParam, attribSign;      
@@ -339,16 +339,16 @@ bool vPartEnum::consistIndex(const string &filenamePrefix) const
 //----------------------------------Search Starts-----------------------------------//
 
 
-void vPartEnum::vsearch(const string &query, vector<unsigned> &results) 
+void VPartEnum::vsearch(const string &query, vector<unsigned> &results) 
 {
   vsearch(query, getEditdist(), results);
 }
 
-void vPartEnum::vsearch(const string &query, const unsigned editdist, 
+void VPartEnum::vsearch(const string &query, const unsigned editdist, 
                       vector<unsigned> &results)
 {
   if (editdist > getEditdist()) {
-    cerr << "vPartEnum::search editdist greater than editdist in constructor"
+    cerr << "VPartEnum::search editdist greater than editdist in constructor"
          << endl;
     exit(EXIT_FAILURE);
   }
@@ -376,16 +376,16 @@ void vPartEnum::vsearch(const string &query, const unsigned editdist,
 }
 
 
-void vPartEnum::search(const string &query, vector<unsigned> &results) 
+void VPartEnum::search(const string &query, vector<unsigned> &results) 
 {
   search(query, getEditdist(), results);
 }
 
-void vPartEnum::search(const string &query, const unsigned editdist, 
+void VPartEnum::search(const string &query, const unsigned editdist, 
                       vector<unsigned> &results)
 {
   if (editdist > getEditdist()) {
-    cerr << "vPartEnum::search editdist greater than editdist in constructor"
+    cerr << "VPartEnum::search editdist greater than editdist in constructor"
          << endl;
     exit(EXIT_FAILURE);
   }
@@ -417,7 +417,7 @@ void vPartEnum::search(const string &query, const unsigned editdist,
 
 //----------------------------------VGRAM specific stuff Starts-----------------------------------//
 
-void vPartEnum::NAG(const string &s, unsigned maxk, unordered_map <string, vector<unsigned> > &nag) 
+void VPartEnum::NAG(const string &s, unsigned maxk, NagMap &nag) 
 {
   vector<unsigned> ids;
   vector<unsigned> nagsi;
@@ -425,8 +425,10 @@ void vPartEnum::NAG(const string &s, unsigned maxk, unordered_map <string, vecto
 
   if(nag.find(s) == nag.end()){
       for(unsigned j = 0; j < s.length(); j++){
-      unsigned x = posL[s][j][1]; //position
-      for(unsigned i = x * 2 ; i <= (x + freqLenL[posL[s][j]].at(0)) * 2 + 2; i++){
+      unsigned x = posL[s]->at(j).at(0); //position
+
+      
+      for(unsigned i = x * 2 ; i <= (x + freqLenL[posL[s]->at(j).at(0)]->at(0)) * 2 + 2; i++){
         if(i > s.length() * 2 + 1){
           break;
         }
@@ -434,24 +436,26 @@ void vPartEnum::NAG(const string &s, unsigned maxk, unordered_map <string, vecto
       }
     }
   }
-  sort(nagsi.begin(),nagsi.end(),[](unsigned a, unsigned b) { return a > b; });
+  sort(nagsi.begin(),nagsi.end(), greater<unsigned>()); //[](unsigned a, unsigned b) { return a > b; });
   for(unsigned i = 1; i <= maxk; i++){
     unsigned temp = 0;
-    for(unsigned j = 1; j <= i){
-      temp+=nagsi[j-1]
+    for(unsigned j = 1; j <= i; j++){
+      temp+=nagsi[j-1];
     }
-    nag[s].push_back[temp];
+    // vector<unsigned> aa = new vector<unsigned>();
+    // aa.push_back(temp);
+    nag[s].push_back(temp);
   }
   
 }
 
-bool vPartEnum::VGRAMDistance(const string &s1, const string &s2, unsigned threshold)
+bool VPartEnum::VGRAMDistance(const string &s1, const string &s2, unsigned threshold)
 {
   vector<unsigned> ids1;
   vector<unsigned> ids2;
 
-  vgramId.pruneGetIds(s1, ids1 ,idL, posL, freqLenL);
-  vgramId.pruneGetIds(s2, ids2 ,idL, posL, freqLenL);
+  this->vGramID.pruneGetIds(s1, ids1 ,idL, posL, freqLenL);
+  this->vGramID.pruneGetIds(s2, ids2 ,idL, posL, freqLenL);
 
   unsigned l1 = ids1.size();
   unsigned l2 = ids2.size();
@@ -463,8 +467,12 @@ bool vPartEnum::VGRAMDistance(const string &s1, const string &s2, unsigned thres
   vector<unsigned>::iterator it;
   it = set_intersection (ids1.begin(),ids1.end(), ids2.begin(),ids2.end(), res.begin());
   res.resize(it-res.begin());
+  unsigned prc;
+  NAG(s1, threshold, nag);
+  NAG(s2, threshold, nag);
+  prc = nag[s1].at(threshold-1)+nag[s2].at(threshold-1);
 
-  return (res.size()-(l1+l2-threshold)/2 >= 0);
+  return (res.size()-(l1 + l2 - prc)/2 >= 0);
 
 }
 
@@ -474,7 +482,7 @@ bool vPartEnum::VGRAMDistance(const string &s1, const string &s2, unsigned thres
 
 //----------------------------------Signs Starts-----------------------------------//
 
-void vPartEnum::buildsign(const string &s, vector<unsigned> &sig) 
+void VPartEnum::buildsign(const string &s, vector<unsigned> &sig) 
 {
   unsigned sigP[siglen];
   buildsign(s, sigP);
@@ -482,14 +490,18 @@ void vPartEnum::buildsign(const string &s, vector<unsigned> &sig)
     sig.push_back(sigP[i]);
 }
 
-void vPartEnum::buildsign(const string &s, unsigned *sig) 
+void VPartEnum::bhash(vector<unsigned> &sg, unsigned *sig, unsigned k) const{
+  boost::hash<vector<unsigned> > vectorHash;
+  sig[k++] = vectorHash(sg);
+}
+
+void VPartEnum::buildsign(const string &s, unsigned *sig) 
 {
   vector<unsigned> ids;
-  vgramId.pruneGetIds(s, ids, idL, posL, freqLenL); 
-  // vgramId.getIds(s, ids);
+  this->vGramID.pruneGetIds(s, ids, idL, posL, freqLenL); 
+  // VGramID.getIds(s, ids);
   vector<unsigned> sg;
   set<unsigned> p1;
-  boost::hash<vector<unsigned> > vectorHash;
   unsigned k = 0;
 
   
@@ -507,13 +519,14 @@ void vPartEnum::buildsign(const string &s, unsigned *sig)
       sg.push_back(i);
       sg.insert(sg.end(), sub->begin(), sub->end());
       sg.insert(sg.end(), p1.begin(), p1.end());
-      sig[k++] = vectorHash(sg);
+      // sig[k++] = vectorHash(sg);
+      bhash(sg,sig,k);
     }
 }
 
 
 
-void vPartEnum::sign(const string &s, vector<unsigned> &sig) const 
+void VPartEnum::sign(const string &s, vector<unsigned> &sig) 
 {
   unsigned sigP[siglen];
   sign(s, sigP);
@@ -521,13 +534,12 @@ void vPartEnum::sign(const string &s, vector<unsigned> &sig) const
     sig.push_back(sigP[i]);
 }
 
-void vPartEnum::sign(const string &s, unsigned *sig) const 
+void VPartEnum::sign(const string &s, unsigned *sig)
 {
   vector<unsigned> ids;
-  vgramId.getIds(s, ids ,idL, posL, freqLenL);
+  this->vGramID.pruneGetIds(s, ids ,idL, posL, freqLenL);
   vector<unsigned> sg;
   set<unsigned> p1;
-  boost::hash<vector<unsigned> > vectorHash;
   unsigned k = 0;
   
   for (unsigned i = 0; i < n1; i++)
@@ -544,7 +556,7 @@ void vPartEnum::sign(const string &s, unsigned *sig) const
       sg.push_back(i);
       sg.insert(sg.end(), sub->begin(), sub->end());
       sg.insert(sg.end(), p1.begin(), p1.end());
-      sig[k++] = vectorHash(sg);
+      bhash(sg,sig,k);
     }
 }
 
@@ -553,11 +565,11 @@ void vPartEnum::sign(const string &s, unsigned *sig) const
 
 
 
-bool vPartEnum::operator==(const vPartEnum &h) const 
+bool VPartEnum::operator==(const VPartEnum &h) const 
 {
   if (this == &h) 
     return true;
-  if (vgramId == h.vgramId && 
+  if (this->vGramID == h.vGramID && 
       k == h.k && 
       k2 == h.k2 && 
       n1 == h.n1 && 

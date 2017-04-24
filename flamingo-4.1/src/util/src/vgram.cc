@@ -135,29 +135,6 @@ void getSpecialGrams(const string &s, const unsigned q, const vector<char> ch,
 }// getSpecialGrams
 
 
-
-// not used
-void str2vgrams(const string &s, vector<string> &res, unsigned qmin, unsigned qmax,
-               unsigned char st, unsigned char en)
-{
-  const string sPad = string(qmin - 1, st) + s + string(qmin - 1, en);
-  
-  for (unsigned i = 0; i < s.length() + qmin - 1; i++)
-    res.push_back(sPad.substr(i, q));  
-}
-
-void str2vgrams(const string &s, vector<unsigned> &res, 
-               unsigned qmin, unsigned qmax, unsigned char st, unsigned char en) 
-{
-  string sPad = string(qmin - 1, st) + s + string(qmin - 1, en);
-  
-  for (unsigned i = 0; i < s.length() + qmin - 1; i++)
-    res.push_back(hashString(sPad.substr(i, q)));
-}
-
-
-
-
 // Temporary structure for VGRAM
 
 
@@ -206,7 +183,7 @@ void createIdPosInvertedLists(const vector<string> data, bool addStEn,
           // arrayPos->append(j);
 
           Array<unsigned> *arrayFreqLen = freqLenLists[gram];
-          arrayFreqLen.at(1)++;
+          freqLenLists[gram]->at(1)++;
         }//end else
       }//end gram array loop  
     }//end various length gram arrays loop
@@ -230,14 +207,14 @@ unsigned gram2id(const string &gram)
     gramLen = gram.length();
   string::size_type pos;
   for (unsigned i = 0; i < gramLen; i++) {
-    pos = vGramId::charsetEn.find(gram[i]);
+    pos = VGramID::charsetEn.find(gram[i]);
     if (pos == string::npos) {
       cerr << "can't find character '" << gram[i] << "'(" 
            << static_cast<unsigned>(gram[i]) << ") of gram \"" << gram
            << "\" in charset" << endl;
       exit(EXIT_FAILURE);
     }
-    id += pow(vGramId::charsetEn.size(), gramLen - i - 1) * pos;
+    id += pow(VGramID::charsetEn.size(), gramLen - i - 1) * pos;
   }
   return id;
 }
@@ -246,20 +223,20 @@ void id2gram(unsigned id, string &res, const unsigned qmin, const unsigned qmax)
 {
   res = "";
   while (id > 0) {
-    res = string(1, vGramId::charsetEn[id % vGramId::charsetEn.size()]) + res;
-    id = id / vGramId::charsetEn.size();
+    res = string(1, VGramID::charsetEn[id % VGramID::charsetEn.size()]) + res;
+    id = id / VGramID::charsetEn.size();
   }
-  while (res.length() < q)
-    res = string(1, vGramId::charsetEn[0]) + res;
+  while (res.length() < qmin)
+    res = string(1, VGramID::charsetEn[0]) + res;
 }
 
 // GramId
-const unsigned vGramId::charsetLenMax = 500;
-const string vGramId::charsetEn = 
+const unsigned VGramID::charsetLenMax = 500;
+const string VGramID::charsetEn = 
   " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~0123456789abcdefghijklmnopqrstuvwxyz";
-const string vGramId::gramidSuffix = ".gid.bin";
+const string VGramID::gramidSuffix = ".gid.bin";
 
-vGramId::vGramId(unsigned q, unsigned qmin, unsigned qmax, char st, char en, 
+VGramID::VGramID(unsigned q, unsigned qmin, unsigned qmax, char st, char en, 
                const string &charset, bool withPerm, unsigned rqf):
   q(qmin),
   qmin(qmin),
@@ -280,12 +257,12 @@ vGramId::vGramId(unsigned q, unsigned qmin, unsigned qmax, char st, char en,
   
 }
 
-vGramId::vGramId(const string &filenamePrefix) 
+VGramID::VGramID(const string &filenamePrefix) 
 {
   loadData(filenamePrefix);
 }
 
-unsigned vGramId::getId(const string &gram) const
+unsigned VGramID::getId(const string &gram) const
 {
   unsigned
     id = 0, 
@@ -304,7 +281,7 @@ unsigned vGramId::getId(const string &gram) const
   return id;
 }
 
-string vGramId::getGram(unsigned id) const
+string VGramID::getGram(unsigned id) const
 {
   string gram = "";
   while (id > 0) {
@@ -317,9 +294,9 @@ string vGramId::getGram(unsigned id) const
 }
 
 //Threshold T (implemented differently)
-void vGramId::pruneGetIds(const string &s, vector<unsigned> &ids, 
+void VGramID::pruneGetIds(const string &s, vector<unsigned> &ids, 
 GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists){
-  vector<vector<unsigned>> gs;
+  vector<vector<unsigned> > gs;
   vector<unsigned> grms;
   for(unsigned z = qmin; z <= qmax; z++) {
     vector<unsigned> temp;
@@ -337,22 +314,22 @@ GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists){
     // ) {
        
     // } else {
-      if(freqLenLists[gs.at(0)[w]].at(1) <= rareqminFreq || z == 0) { //not sure how good rarefreq is, make it small just to be safe
+      if(freqLenLists[gs.at(0)[w]]->at(1) <= rareqminFreq || z == 0) { //not sure how good rarefreq is, make it small just to be safe
         grms.push_back(gs.at(0)[w]);
          
-        Array<vector<unsigned>> *arrayPos = new Array<vector<unsigned>>();
+        Array<vector<unsigned> > *arrayPos = new Array<vector<unsigned> >();
         vector<unsigned> tempq;
         tempq.push_back(gs.at(0)[w]); //gram
         tempq.push_back(w); //pos
         arrayPos->append(tempq);
         posLists[s] = arrayPos;
       }
-      else if(freqLenLists[gs.at(z)[w]].at(1) / freqLenLists[gs.at(z-1)[w]].at(1) >= pow((z+qmin-1)/(z+qmin),2) 
-      && freqLenLists[gs.at(z)[w]].at(1) >= rareqminFreq
+      else if(freqLenLists[gs.at(z)[w]]->at(1) / freqLenLists[gs.at(z-1)[w]]->at(1) >= pow((z+qmin-1)/(z+qmin),2) 
+      && freqLenLists[gs.at(z)[w]]->at(1) >= rareqminFreq
       ) { // some random threshold bound
         grms.push_back(gs.at(z)[w]);
 
-        Array<vector<unsigned>> *arrayPos = new Array<vector<unsigned>>();
+        Array<vector<unsigned> > *arrayPos = new Array<vector<unsigned> >();
         vector<unsigned> tempq;
         tempq.push_back(gs.at(z)[w]); //gram
         tempq.push_back(w); //pos
@@ -367,15 +344,15 @@ GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists){
   }
 
   for (vector<unsigned>::const_iterator it = grms.begin(); it != grms.end(); it++)
-    ids.push_back(it);
+    ids.push_back(*it);
 }
 
 
 
-void vGramId::getIds(const string &s, vector<unsigned> &ids, 
+void VGramID::getIds(const string &s, vector<unsigned> &ids, 
 GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists) const
 {
-  vector<vector<unsigned>> gs;
+  vector<vector<unsigned> > gs;
   vector<unsigned> grms;
   for(unsigned z = qmin; z <= qmax; z++) {
     vector<unsigned> temp;
@@ -387,18 +364,18 @@ GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists) const
   for(unsigned w = 0; w < gs.at(0).size(); w++){   
   // priority for longest gram
     if(idLists.find(gs.at(0)[w]) == idLists.end()){
-      grms.push_back(gs.at(z)[w]); // query string somehow doesn't have some qmin gram.
+      grms.push_back(gs.at(0)[w]); // query string somehow doesn't have some qmin gram.
       break;
     }
 
     for(unsigned z = qmax-qmin; z >= 0; z--) {
-      if(freqLenLists[gs.at(0)[w]].at(1) <= rareqminFreq || z == 0) { //not sure how good rarefreq is, make it small just to be safe
+      if(freqLenLists[gs.at(0)[w]]->at(1) <= rareqminFreq || z == 0) { //not sure how good rarefreq is, make it small just to be safe
         grms.push_back(gs.at(0)[w]);
         break;
       }
 
-      if(freqLenLists[gs.at(z)[w]].at(1) / freqLenLists[gs.at(z-1)[w]].at(1) >= pow((z+qmin-1)/(z+qmin),2) 
-      && freqLenLists[gs.at(z)[w]].at(1) >= rareqminFreq
+      if(freqLenLists[gs.at(z)[w]]->at(1) / freqLenLists[gs.at(z-1)[w]]->at(1) >= pow((z+qmin-1)/(z+qmin),2) 
+      && freqLenLists[gs.at(z)[w]]->at(1) >= rareqminFreq
       ) { // some random threshold bound
         grms.push_back(gs.at(z)[w]);
         break;
@@ -407,17 +384,17 @@ GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists) const
   }
 
   for (vector<unsigned>::const_iterator it = grms.begin(); it != grms.end(); it++)
-    ids.push_back(it);
+    ids.push_back(*it);
 
 }
 
-void vGramId::getGrams(const vector<unsigned> &ids, vector<string> &grams) const
+void VGramID::getGrams(const vector<unsigned> &ids, vector<string> &grams) const
 {
   for (vector<unsigned>::const_iterator it = ids.begin(); it != ids.end(); it++)
     grams.push_back(getGram(*it));
 }
 
-void vGramId::saveData(const string &filenamePrefix) const
+void VGramID::saveData(const string &filenamePrefix) const
 {
   string filename = filenamePrefix + gramidSuffix;
 
@@ -464,7 +441,7 @@ void vGramId::saveData(const string &filenamePrefix) const
   cerr << "OK" << endl;
 }
 
-void vGramId::loadData(const string &filenamePerfix)
+void VGramID::loadData(const string &filenamePerfix)
 {
   string filename = filenamePerfix + gramidSuffix;
  
@@ -517,7 +494,7 @@ void vGramId::loadData(const string &filenamePerfix)
   cerr << "OK" << endl;
 }
 
-unsigned vGramId::invPerm(unsigned id) const
+unsigned VGramID::invPerm(unsigned id) const
 {
   for (unsigned i = 0; i < perm.size(); i++)
     if (perm[i] == id)
@@ -526,7 +503,7 @@ unsigned vGramId::invPerm(unsigned id) const
   exit(EXIT_FAILURE);
 }
 
-bool vGramId::consistData(const string &filenamePrefix, 
+bool VGramID::consistData(const string &filenamePrefix, 
                          const string &filenameExt) const
 {
   string filename = filenamePrefix + gramidSuffix;
@@ -547,7 +524,7 @@ bool vGramId::consistData(const string &filenamePrefix,
   return true;  
 }
 
-bool vGramId::operator==(const vGramId& g) const 
+bool VGramID::operator==(const VGramID& g) const 
 {
   if (this == &g)
     return true;

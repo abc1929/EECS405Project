@@ -95,28 +95,28 @@ include /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFil
 
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/gram.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/vgram.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/gram.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/gram.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/util-lib.dir/src/vgram.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/vgram.cc
 
-/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/gram.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/gram.cc > CMakeFiles/util-lib.dir/src/gram.cc.i
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util-lib.dir/src/vgram.cc.i"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/vgram.cc > CMakeFiles/util-lib.dir/src/vgram.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/gram.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/gram.cc -o CMakeFiles/util-lib.dir/src/gram.cc.s
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util-lib.dir/src/vgram.cc.s"
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/vgram.cc -o CMakeFiles/util-lib.dir/src/vgram.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o.requires:
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.provides
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o.requires
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o.provides.build
+.PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o
 
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/flags.make
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/src/input.cc
@@ -398,7 +398,7 @@ include /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFil
 util__lib_OBJECTS = \
 "CMakeFiles/util-lib.dir/src/appsearch.cc.o" \
 "CMakeFiles/util-lib.dir/src/array.cc.o" \
-"CMakeFiles/util-lib.dir/src/gram.cc.o" \
+"CMakeFiles/util-lib.dir/src/vgram.cc.o" \
 "CMakeFiles/util-lib.dir/src/input.cc.o" \
 "CMakeFiles/util-lib.dir/src/io.cc.o" \
 "CMakeFiles/util-lib.dir/src/looptimer.cc.o" \
@@ -417,7 +417,7 @@ util__lib_EXTERNAL_OBJECTS =
 
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o
-/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/build/libutil-lib.so: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o
@@ -441,7 +441,7 @@ util__lib_EXTERNAL_OBJECTS =
 
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/appsearch.cc.o.requires
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/array.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/gram.cc.o.requires
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/vgram.cc.o.requires
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/input.cc.o.requires
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/io.cc.o.requires
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/src/looptimer.cc.o.requires
