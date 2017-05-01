@@ -40,7 +40,8 @@ VPartEnum::VPartEnum(const vector<string> &data,
                    unsigned qmin, unsigned qmax, unsigned editdist, unsigned n1, unsigned n2, unsigned rqf):
   data(&data),
   vGramID(VGramID(qmin,qmax,rqf)),
-  k(2 * editdist *  qmax),
+  k(2 * editdist *  qmin),
+  edi(editdist),
   k2((k + 1) / n1 - 1),
   n1(n1),
   n2(n2),
@@ -48,11 +49,14 @@ VPartEnum::VPartEnum(const vector<string> &data,
   datalen(this->data->size()), 
   siglen(subs.size() * n1), 
   buckets(new SigsBucket[siglen]),
-  idL(GramListMap()),
-  posL(StringGramPos()),
-  freqLenL(GramListMap()),
-  nag(NagMap()) 
+  idL(*new GramListMap()),
+  posL(*new GramListMap()),
+  lL(*new GramLengthMap()),
+  nag(*new NagMap()),
+  qmin(qmin),
+  qmax(qmax)
 {
+  cerr << "test1";
   if (siglen > siglenMax) {
     cerr << "siglen " << siglen << " greater than siglenMax " << siglenMax << endl;
     exit(EXIT_FAILURE);
@@ -82,11 +86,13 @@ void VPartEnum::build()
   cerr << "sign";
   unsigned *sigs = new unsigned[datalen * siglen];
   unsigned i = 0;
+
   // building grams dictionary 
-  createIdPosInvertedLists(*data, 1, idL, freqLenL, qmin, qmax);
+  createIdPosInvertedLists(*data, 0, idL, posL, lL, qmin, qmax);
+
   for (vector<string>::const_iterator it = data->begin(); 
        it != data->end(); ++it) {
-    if (i % 10000 == 0) {
+    if (i % 1000 == 0) {
       cerr << '.'; cerr.flush();
     }
 
@@ -100,7 +106,7 @@ void VPartEnum::build()
 
   // time efficient
   for (unsigned j = 0; j < siglen; j++) {
-    if (j % siglen / 10 == 0) {
+    if (j % siglen / 10000 == 0) {
       cerr << '.'; cerr.flush();
     }
     map<unsigned, vector<unsigned> > bucketsVec;
@@ -149,9 +155,9 @@ void VPartEnum::build()
   cerr << "OK" << endl;
   
   delete[] sigs;
-  delete[] &idL;
-  delete[] &posL;
-  delete[] &freqLenL;
+  // delete[] &idL;
+  // delete[] &posL;
+  // delete[] &freqLenL;
 }
 
 void VPartEnum::saveIndex(const string &filenamePrefix) const
@@ -367,8 +373,12 @@ void VPartEnum::vsearch(const string &query, const unsigned editdist,
         id = sigs[i];
         if (!checksBit[id]) {
           checksBit[id] = 1;
-          if (VGRAMDistance(query, (*data)[id], k))
+          
+          if (ed(query, (*data)[id], editdist))
+          // if (VGRAMDistance(query, (*data)[id], getEditdist()))
             results.push_back(id);
+          
+            
         }
       }
     }
@@ -395,7 +405,7 @@ void VPartEnum::search(const string &query, const unsigned editdist,
   unsigned char checksBit[datalen];
 
   memset(checksBit, 0, datalen);
-  sign(query, sig);
+  buildsign(query, sig);
   for (j = 0; j < siglen; j++) {
     SigsBucket::const_iterator pos = buckets[j].find(sig[j]);
     if (pos != buckets[j].end()) {
@@ -417,34 +427,107 @@ void VPartEnum::search(const string &query, const unsigned editdist,
 
 //----------------------------------VGRAM specific stuff Starts-----------------------------------//
 
+
+// loose bound calculating NAG, not correct
 void VPartEnum::NAG(const string &s, unsigned maxk, NagMap &nag) 
 {
-  vector<unsigned> ids;
-  vector<unsigned> nagsi;
-  nagsi.resize(s.length() * 2 + 1);
-
   if(nag.find(s) == nag.end()){
-      for(unsigned j = 0; j < s.length(); j++){
-      unsigned x = posL[s]->at(j).at(0); //position
+    vector<unsigned> ids; // [g1,g2,g3..]
+    vector<unsigned> pids; // [0,2,3..]
+    vector<unsigned> nagsi;
 
-      
-      for(unsigned i = x * 2 ; i <= (x + freqLenL[posL[s]->at(j).at(0)]->at(0)) * 2 + 2; i++){
-        if(i > s.length() * 2 + 1){
-          break;
+    vGramID.getIds(s, ids ,pids ,idL, posL);
+    nagsi.resize(s.length() * 2 + 1);
+
+    // for(unsigned j = 0; j < pids.size(); j++){
+    //   unsigned x = pids[j]; //
+    //   unsigned y = 0;
+    //   if(j == pids.size()-1){
+    //      for(unsigned i = x * 2 ; i < nagsi.size(); i++){
+    //       if(i > s.length() * 2 + 1){
+    //         break;
+    //       }
+    //       nagsi[i]++;
+    //     }
+    //   } 
+    //   else {
+        //  y = pids[j+1];
+        //  for(unsigned i = x * 2 ; i <= (y) * 2 + 2; i++){
+        //   if(i > s.length() * 2 + 1){
+        //     break;
+        //   }
+        //   nagsi[i]++;
+        // }
+    //   }
+    // }
+
+    if(s.length()<=qmin){
+      for(unsigned i = 0; i < nagsi.size(); i++){
+        if(i == 0 || i == nagsi.size()-1){
+          nagsi[i] = 0;
+        } else {
+          nagsi[i] = 1;
         }
-        nagsi[i]++;
       }
+    } else {
+      for(unsigned i = 0; i < nagsi.size(); i++){
+        nagsi[i] = 0;
+      }
+      // span of pids[j], lL[ids[j]] length
+           
+      for(unsigned j = 0; j < pids.size(); j++){
+        unsigned x = pids[j];
+        // for(unsigned i = 1; i < nagsi.size()-1; i++){
+          unsigned lenx = 0;
+          if(lL.find(ids[j]) == lL.end()){
+            lenx = qmin;
+          } else {lenx = lL[ids[j]];}
+          unsigned y = x+lenx-1;
+          for(unsigned i = x * 2 + 1; i <= (y) * 2 + 1; i++){
+            if(i > s.length() * 2 + 1){
+              break;
+            }
+            nagsi[i]++;
+          }
+        
+        // }
+      }
+
+      cerr << "test nag ";
+      for(unsigned x = 0; x < nagsi.size(); x++){
+        cerr << nagsi[x];
+      }
+      cerr << endl;
+
+
+      // for(unsigned i = 1; i < nagsi.size()-1; i++){
+      //   nagsi[i] = 1;
+      //   unsigned count = 0;
+      //   for(unsigned j = 0; j < pids.size(); j++){
+      //     // span of pids[j]
+
+      //     if( j * 2 + 1  )
+          
+          
+
+      //   }
+      // }
+
+
     }
-  }
-  sort(nagsi.begin(),nagsi.end(), greater<unsigned>()); //[](unsigned a, unsigned b) { return a > b; });
-  for(unsigned i = 1; i <= maxk; i++){
-    unsigned temp = 0;
-    for(unsigned j = 1; j <= i; j++){
-      temp+=nagsi[j-1];
+
+
+
+    sort(nagsi.begin(),nagsi.end(), greater<unsigned>()); //[](unsigned a, unsigned b) { return a > b; });
+    for(unsigned i = 1; i <= maxk; i++){
+      unsigned temp = 0;
+      for(unsigned j = 1; j <= i; j++){
+        temp+=nagsi[j-1];
+      }
+      // vector<unsigned> aa = new vector<unsigned>();
+      // aa.push_back(temp);
+      nag[s].push_back(temp);
     }
-    // vector<unsigned> aa = new vector<unsigned>();
-    // aa.push_back(temp);
-    nag[s].push_back(temp);
   }
   
 }
@@ -453,12 +536,19 @@ bool VPartEnum::VGRAMDistance(const string &s1, const string &s2, unsigned thres
 {
   vector<unsigned> ids1;
   vector<unsigned> ids2;
+  vector<unsigned> nu;
 
-  this->vGramID.pruneGetIds(s1, ids1 ,idL, posL, freqLenL);
-  this->vGramID.pruneGetIds(s2, ids2 ,idL, posL, freqLenL);
+
+  vGramID.getIds(s1, ids1, nu ,idL, posL);
+  vGramID.getIds(s2, ids2, nu ,idL, posL);
+  // this->vGramID.pruneGetIds(s1, ids1 ,idL, posL, freqLenL);
+  // this->vGramID.pruneGetIds(s2, ids2 ,idL, posL, freqLenL);
 
   unsigned l1 = ids1.size();
   unsigned l2 = ids2.size();
+  unsigned diff = l1 >= l2 ? l1 - l2 : l2 - l1;
+  // cerr << "l1 size: " << l1 << endl;
+  // cerr << "l2 size: " << l2 << endl;
   vector<unsigned> res(l1+l2);
 
   sort(ids1.begin(),ids1.end());
@@ -468,11 +558,31 @@ bool VPartEnum::VGRAMDistance(const string &s1, const string &s2, unsigned thres
   it = set_intersection (ids1.begin(),ids1.end(), ids2.begin(),ids2.end(), res.begin());
   res.resize(it-res.begin());
   unsigned prc;
-  NAG(s1, threshold, nag);
-  NAG(s2, threshold, nag);
-  prc = nag[s1].at(threshold-1)+nag[s2].at(threshold-1);
+  // NAG(s1, threshold, nag);
+  // for (vector<unsigned>::const_iterator i = nag[s1].begin(); i != nag[s1].end(); ++i)
+    // cout << nag["delmare"][0] << endl;
+  prc = nag[s1][(threshold-1)]+nag[s2][(threshold-1)];
 
-  return (res.size()-(l1 + l2 - prc)/2 >= 0);
+  unsigned te1 = l1>=nag[s1][(threshold-1)] ? l1-nag[s1][(threshold-1)] : 0;
+  unsigned te2 = l2>=nag[s2][(threshold-1)] ? l2-nag[s2][(threshold-1)] : 0;
+  unsigned prd;
+
+  // cerr<< endl << "te1: " << te1 << " te2: " << te2 << " " << endl << endl;
+
+  prd = (te1 >= te2) ? te1 : te2;
+  if(prd <= 0){prd = 0;}  
+
+  // cerr << "l1: " << l1 << " l2: " << l2 << "diff: "  << diff << " ";;
+  // cerr << "nag1: " << nag[s1][(threshold-1)] << " nag2: " << nag[s2][(threshold-1)] ;
+  // cerr << " prc: " << prc << " ";
+  // cerr << " hamming: " << 2 * diff + (l1+l2-2*res.size()) << "  string: " << s2  << endl;
+  // cerr << " common grams: " << res.size() << " ";
+  // cerr << " lower bound: " << prd << " " << endl;
+  // return (res.size()-(l1 + l2 - prc)/2 >= 0);
+
+  //# of common grams >= 
+
+  return (prc >= (2 * diff + l1+l2-2*res.size()) && res.size() > prd);
 
 }
 
@@ -498,10 +608,15 @@ void VPartEnum::bhash(vector<unsigned> &sg, unsigned *sig, unsigned k) const{
 void VPartEnum::buildsign(const string &s, unsigned *sig) 
 {
   vector<unsigned> ids;
-  this->vGramID.pruneGetIds(s, ids, idL, posL, freqLenL); 
+  vector<unsigned> nu; 
+  vGramID.getIds(s, ids, nu, idL, posL); // us
+  // cerr << "ecksdee \n"; 
+  NAG(s, getEditdist(), nag);
+  // cerr << "buildsign test \n";  
   // VGramID.getIds(s, ids);
   vector<unsigned> sg;
   set<unsigned> p1;
+  boost::hash<vector<unsigned> > vectorHash;
   unsigned k = 0;
 
   
@@ -519,46 +634,46 @@ void VPartEnum::buildsign(const string &s, unsigned *sig)
       sg.push_back(i);
       sg.insert(sg.end(), sub->begin(), sub->end());
       sg.insert(sg.end(), p1.begin(), p1.end());
-      // sig[k++] = vectorHash(sg);
-      bhash(sg,sig,k);
+      sig[k++] = vectorHash(sg);
+      // bhash(sg,sig,k);
     }
 }
 
 
 
-void VPartEnum::sign(const string &s, vector<unsigned> &sig) 
-{
-  unsigned sigP[siglen];
-  sign(s, sigP);
-  for (unsigned i = 0; i < siglen; i++)
-    sig.push_back(sigP[i]);
-}
+// void VPartEnum::sign(const string &s, vector<unsigned> &sig) 
+// {
+//   unsigned sigP[siglen];
+//   sign(s, sigP);
+//   for (unsigned i = 0; i < siglen; i++)
+//     sig.push_back(sigP[i]);
+// }
 
-void VPartEnum::sign(const string &s, unsigned *sig)
-{
-  vector<unsigned> ids;
-  this->vGramID.pruneGetIds(s, ids ,idL, posL, freqLenL);
-  vector<unsigned> sg;
-  set<unsigned> p1;
-  unsigned k = 0;
+// void VPartEnum::sign(const string &s, unsigned *sig)
+// {
+//   vector<unsigned> ids;
+//   this->vGramID.pruneGetIds(s, ids ,idL, posL, freqLenL);
+//   vector<unsigned> sg;
+//   set<unsigned> p1;
+//   unsigned k = 0;
   
-  for (unsigned i = 0; i < n1; i++)
-    for (vector<vector<unsigned> >::const_iterator sub = subs.begin();
-         sub != subs.end(); ++sub) {
-      p1.clear();
-      for (vector<unsigned> ::const_iterator j = sub->begin();
-           j != sub->end(); ++j)
-        for (vector<unsigned>::const_iterator id = ids.begin();
-             id != ids.end(); ++id) 
-          if (*id >= begin(i, *j) && *id < end(i, *j))
-            p1.insert(*id);
-      sg.clear();
-      sg.push_back(i);
-      sg.insert(sg.end(), sub->begin(), sub->end());
-      sg.insert(sg.end(), p1.begin(), p1.end());
-      bhash(sg,sig,k);
-    }
-}
+//   for (unsigned i = 0; i < n1; i++)
+//     for (vector<vector<unsigned> >::const_iterator sub = subs.begin();
+//          sub != subs.end(); ++sub) {
+//       p1.clear();
+//       for (vector<unsigned> ::const_iterator j = sub->begin();
+//            j != sub->end(); ++j)
+//         for (vector<unsigned>::const_iterator id = ids.begin();
+//              id != ids.end(); ++id) 
+//           if (*id >= begin(i, *j) && *id < end(i, *j))
+//             p1.insert(*id);
+//       sg.clear();
+//       sg.push_back(i);
+//       sg.insert(sg.end(), sub->begin(), sub->end());
+//       sg.insert(sg.end(), p1.begin(), p1.end());
+//       bhash(sg,sig,k);
+//     }
+// }
 
 
 //----------------------------------Signs Ends-----------------------------------//

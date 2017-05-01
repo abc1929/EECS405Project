@@ -46,11 +46,7 @@ public:
   VPartEnum(const vector<string> &data, 
            const string &filename);
   // filename is used as a prefix for multiple filenames
-  VGramID vGramID;
-  GramListMap idL;
-  StringGramPos posL;
-  GramListMap freqLenL;
-  NagMap nag;
+  
 
   void build();
   void saveIndex(const string &filename) const;
@@ -67,7 +63,8 @@ public:
   ~VPartEnum();
 
   unsigned getQ() const { return vGramID.getQ(); }
-  unsigned getEditdist() const { return k / vGramID.getQ() / 2; }
+  // unsigned getEditdist() const { return k / vGramID.getQ() / 2; }
+  unsigned getEditdist() const { return edi; }
   unsigned getN1() const { return n1; }
   unsigned getN2() const { return n2; }
   unsigned getK() const { return k; }
@@ -78,15 +75,22 @@ public:
   void buildsign(const string &s, vector<unsigned> &sig);
   void buildsign(const string &s, unsigned *sig); 
   void bhash(vector<unsigned> &sg, unsigned *sig, unsigned k) const;
-  void sign(const string &s, vector<unsigned> &sig);
-  void sign(const string &s, unsigned *sig);
+  // void sign(const string &s, vector<unsigned> &sig);
+  // void sign(const string &s, unsigned *sig);
 
   bool operator==(const VPartEnum &h) const;
-  unsigned qmin;
-  unsigned qmax;
 
 private:
   const vector<string> *data;
+  unsigned qmin;
+  unsigned qmax;
+  unsigned edi;
+  VGramID vGramID;
+  GramListMap idL;
+  GramListMap posL;
+  GramLengthMap lL;
+  // GramListMap freqLenL;
+  NagMap nag;
   unsigned k, k2, n1, n2;
 
 

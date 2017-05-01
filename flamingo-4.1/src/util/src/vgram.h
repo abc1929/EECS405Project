@@ -26,8 +26,14 @@
 using namespace std;
 using namespace tr1;
 
+typedef unordered_map <string, unsigned> GramHash;
+typedef unordered_map <unsigned, Array<unsigned>*> GramHashInfo; //gram-> [dataID,pos,freq]
+// get gram list: string -> pick longest first... whether ti - tio - tion (4 vs 3 would require a higher freq compared to 3 vs 2)
+// I guess we don't need to prune.
+// string -> (grams,pos)
 typedef unordered_map <unsigned, Array<unsigned>*> GramListMap;
-typedef unordered_map <string, Array<vector<unsigned> >*> StringGramPos;
+typedef unordered_map <unsigned, unsigned> GramLengthMap;
+typedef unordered_map <string, vector<vector<unsigned> > > StringGramPos;
 typedef unordered_map <string, vector<unsigned> > NagMap;
 // typedef map <unsigned, Array<unsigned>*> vGramListMap;
 
@@ -88,7 +94,8 @@ void str2gramsNoPrePost(const string &s, set<unsigned> &res,  unsigned q);
 // If create grams without prefix and suffic, please set addStEn = false
 void createIdPosInvertedLists(const vector<string> data, bool addStEn,
                               GramListMap &idLists, //StringGramPos &posLists, 
-                              GramListMap &freqLenLists, 
+                              GramListMap &posLists,
+                              GramLengthMap &lLists,
                               unsigned qmin = 3,
                               unsigned qmax = 3,
                               unsigned char st = PREFIXCHAR, 
@@ -107,19 +114,18 @@ unsigned gram2id(const string &gram); // get ID from gram
 void id2gram(unsigned id, string &res,
              const unsigned qmin = 3, unsigned qmax = 3); // get ID from unsigned
 
-extern hash<string> hashString;
+// extern hash<string> hashString;
 
 class VGramID                    // grams as IDs in a vector with all possible grams
 {
 public:
   VGramID(unsigned qmin = 3,
          unsigned qmax = 3,
-         unsigned q = 3,
+         unsigned rqf = 1,
          char st = PREFIXCHAR,
          char en = SUFFIXCHAR, 
          const string &charset = charsetEn,
-         bool withPerm = true,
-         unsigned rqf = 1
+         bool withPerm = true
          );
   VGramID(const string &filenamePreffix);
 
@@ -135,8 +141,8 @@ public:
   void pruneGetIds(const string &s, vector<unsigned> &ids, 
   GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists);
 
-  void getIds(const string &s, vector<unsigned> &ids
-  ,GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists) const;
+  void getIds(const string &s, vector<unsigned> &ids, vector<unsigned> &pids
+  ,GramListMap &idLists, GramListMap &posLists);
   // convert string to list of gram IDs
   void getGrams(const vector<unsigned> &ids, vector<string> &grams) const;
   // convert list of gram IDs to list of grams

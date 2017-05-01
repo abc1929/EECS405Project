@@ -1,2 +1,3 @@
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles/example_vpartenum.dir
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles/vpartenum-lib.dir

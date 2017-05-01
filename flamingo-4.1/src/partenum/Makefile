@@ -103,6 +103,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named example_vpartenum
+
+# Build rule for target.
+example_vpartenum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 example_vpartenum
+.PHONY : example_vpartenum
+
+# fast build rule for target.
+example_vpartenum/fast:
+	$(MAKE) -f CMakeFiles/example_vpartenum.dir/build.make CMakeFiles/example_vpartenum.dir/build
+.PHONY : example_vpartenum/fast
+
+#=============================================================================
 # Target rules for targets named vpartenum-lib
 
 # Build rule for target.
@@ -127,6 +140,30 @@ util-lib: cmake_check_build_system
 util-lib/fast:
 	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build
 .PHONY : util-lib/fast
+
+src/test.o: src/test.cc.o
+.PHONY : src/test.o
+
+# target to build an object file
+src/test.cc.o:
+	$(MAKE) -f CMakeFiles/example_vpartenum.dir/build.make CMakeFiles/example_vpartenum.dir/src/test.cc.o
+.PHONY : src/test.cc.o
+
+src/test.i: src/test.cc.i
+.PHONY : src/test.i
+
+# target to preprocess a source file
+src/test.cc.i:
+	$(MAKE) -f CMakeFiles/example_vpartenum.dir/build.make CMakeFiles/example_vpartenum.dir/src/test.cc.i
+.PHONY : src/test.cc.i
+
+src/test.s: src/test.cc.s
+.PHONY : src/test.s
+
+# target to generate assembly for a file
+src/test.cc.s:
+	$(MAKE) -f CMakeFiles/example_vpartenum.dir/build.make CMakeFiles/example_vpartenum.dir/src/test.cc.s
+.PHONY : src/test.cc.s
 
 src/vpartenum.o: src/vpartenum.cc.o
 .PHONY : src/vpartenum.o
@@ -159,9 +196,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... example_vpartenum"
 	@echo "... rebuild_cache"
 	@echo "... vpartenum-lib"
 	@echo "... util-lib"
+	@echo "... src/test.o"
+	@echo "... src/test.i"
+	@echo "... src/test.s"
 	@echo "... src/vpartenum.o"
 	@echo "... src/vpartenum.i"
 	@echo "... src/vpartenum.s"

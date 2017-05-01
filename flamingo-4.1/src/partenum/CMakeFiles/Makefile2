@@ -53,13 +53,49 @@ CMAKE_SOURCE_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/pa
 CMAKE_BINARY_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum
 
 #=============================================================================
+# Target rules for target CMakeFiles/example_vpartenum.dir
+
+# All Build rule for target.
+CMakeFiles/example_vpartenum.dir/all: CMakeFiles/vpartenum-lib.dir/all
+CMakeFiles/example_vpartenum.dir/all: /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/all
+	$(MAKE) -f CMakeFiles/example_vpartenum.dir/build.make CMakeFiles/example_vpartenum.dir/depend
+	$(MAKE) -f CMakeFiles/example_vpartenum.dir/build.make CMakeFiles/example_vpartenum.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles  1
+	@echo "Built target example_vpartenum"
+.PHONY : CMakeFiles/example_vpartenum.dir/all
+
+# Include target in all.
+all: CMakeFiles/example_vpartenum.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/example_vpartenum.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles 17
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/example_vpartenum.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles 0
+.PHONY : CMakeFiles/example_vpartenum.dir/rule
+
+# Convenience name for target.
+example_vpartenum: CMakeFiles/example_vpartenum.dir/rule
+.PHONY : example_vpartenum
+
+# clean rule for target.
+CMakeFiles/example_vpartenum.dir/clean:
+	$(MAKE) -f CMakeFiles/example_vpartenum.dir/build.make CMakeFiles/example_vpartenum.dir/clean
+.PHONY : CMakeFiles/example_vpartenum.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/example_vpartenum.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/vpartenum-lib.dir
 
 # All Build rule for target.
 CMakeFiles/vpartenum-lib.dir/all:
 	$(MAKE) -f CMakeFiles/vpartenum-lib.dir/build.make CMakeFiles/vpartenum-lib.dir/depend
 	$(MAKE) -f CMakeFiles/vpartenum-lib.dir/build.make CMakeFiles/vpartenum-lib.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles  16
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles  17
 	@echo "Built target vpartenum-lib"
 .PHONY : CMakeFiles/vpartenum-lib.dir/all
 
@@ -109,7 +145,7 @@ clean: CMakeFiles/vpartenum-lib.dir/clean
 /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/all:
 	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/depend
 	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/partenum/CMakeFiles  2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
 	@echo "Built target util-lib"
 .PHONY : /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/all
 

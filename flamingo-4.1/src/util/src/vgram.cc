@@ -89,9 +89,10 @@ void str2gramsNoPrePost(const string &s, vector<unsigned> &res,  unsigned q)
   for (unsigned i = 0; i < s.length() - q + 1; i++) {
     //ignore gram with space 
     string substring = s.substr(i, q);
-    string::size_type loc = substring.find(' ', 0);
-    if (loc == string::npos) 
-      res.push_back(hashString(substring));
+    // string::size_type loc = substring.find(' ', 0);
+    // if (loc == string::npos) 
+    res.push_back(hashString(substring));
+      
   }//end for
 }
 
@@ -141,19 +142,86 @@ void getSpecialGrams(const string &s, const unsigned q, const vector<char> ch,
 //convert strings to inverted lists with id and position information
 //Please remember to release memory space in map in your own code!
 // If create grams without prefix and suffic, please set addStEn = false
+// void createIdPosInvertedLists(const vector<string> data, bool addStEn,
+//                               GramListMap &idLists, //StringGramPos &posLists, 
+//                               GramListMap &freqLenLists, 
+//                               unsigned qmin, unsigned qmax,
+//                               unsigned char st, unsigned char en)
+// {
+//   for(unsigned i=0;i<data.size();i++) {
+//     // cerr << "data: " << i << "\n";
+//     for (unsigned z=qmin;z<=qmax;z++) {
+//       // cerr << "z is " << z;
+//       vector<unsigned> gramCodes;
+//       if (addStEn)
+//         str2grams(data.at(i),gramCodes,z,st,en);
+//       else
+//         str2gramsNoPrePost(data.at(i),gramCodes,z);
+      
+//       for(unsigned j=0;j<gramCodes.size();j++) {
+//         unsigned gram = gramCodes.at(j);
+      
+//         if (idLists.find(gram) == idLists.end()) {
+//           // a new gram
+//           Array<unsigned> *arrayGram = new Array<unsigned>();
+//           arrayGram->append(i);
+//           idLists[gram] = arrayGram;
+          
+//           // Array<vector<unsigned>> *arrayPos = new Array<vector<unsigned>>();
+//           // vector<unsigned> tempq;
+//           // tempq.push_back(gram);
+//           // tempq.push_back(j);
+//           // arrayPos->append(tempq);
+//           // posLists[data.at(i)] = arrayPos;
+
+//           Array<unsigned> *arrayFreqLen = new Array<unsigned>();
+//           arrayFreqLen->append(z);
+//           arrayFreqLen->append(1);
+//           freqLenLists[gram] = arrayFreqLen;
+//         }//end if
+//         else {
+//           Array<unsigned> *arrayGram = idLists[gram];
+//           arrayGram->append(i);
+          
+//           // Array<unsigned> *arrayPos = posLists[gram];
+//           // arrayPos->append(j);
+
+//           Array<unsigned> *arrayFreqLen = freqLenLists[gram];
+//           freqLenLists[gram]->at(1)++;
+//         }//end else
+//       }//end gram array loop  
+//     }//end various length gram arrays loop
+//   }//end for
+// }//end  createIdPosInvertedLists
+
 void createIdPosInvertedLists(const vector<string> data, bool addStEn,
-                              GramListMap &idLists, //StringGramPos &posLists, 
-                              GramListMap &freqLenLists, 
+                              GramListMap &idLists, GramListMap &posLists, GramLengthMap &lLists,
                               unsigned qmin, unsigned qmax,
                               unsigned char st, unsigned char en)
 {
   for(unsigned i=0;i<data.size();i++) {
-    for (unsigned z=qmin;z<=qmax;z++) {
+    for(unsigned z=qmin; z<=qmax; z++){
+      
+
       vector<unsigned> gramCodes;
-      if (addStEn)
-        str2grams(data.at(i),gramCodes,z,st,en);
-      else
-        str2gramsNoPrePost(data.at(i),gramCodes,z);
+      // if (addStEn && z == qmin)
+      if (addStEn){
+        str2grams(data.at(i),gramCodes,z,st,en); 
+      }
+      else{
+        if(data.at(i).length()<qmin){
+          const string padded = string(qmin - data.at(i).length(), st) + data.at(i); 
+          str2gramsNoPrePost(padded,gramCodes,qmin);
+        } else {
+          if(data.at(i).length()<z){
+            break;
+          }
+          str2gramsNoPrePost(data.at(i),gramCodes,z);
+        }
+
+      }
+        
+        
       for(unsigned j=0;j<gramCodes.size();j++) {
         unsigned gram = gramCodes.at(j);
       
@@ -163,31 +231,55 @@ void createIdPosInvertedLists(const vector<string> data, bool addStEn,
           arrayGram->append(i);
           idLists[gram] = arrayGram;
           
-          // Array<vector<unsigned>> *arrayPos = new Array<vector<unsigned>>();
-          // vector<unsigned> tempq;
-          // tempq.push_back(gram);
-          // tempq.push_back(j);
-          // arrayPos->append(tempq);
-          // posLists[data.at(i)] = arrayPos;
+          Array<unsigned> *arrayPos = new Array<unsigned>();
+          arrayPos->append(j);
+          posLists[gram] = arrayPos;
 
-          Array<unsigned> *arrayFreqLen = new Array<unsigned>();
-          arrayFreqLen->append(z);
-          arrayFreqLen->append(1);
-          freqLenLists[gram] = arrayFreqLen;
+          lLists[gram] = z;
         }//end if
         else {
           Array<unsigned> *arrayGram = idLists[gram];
           arrayGram->append(i);
           
-          // Array<unsigned> *arrayPos = posLists[gram];
-          // arrayPos->append(j);
-
-          Array<unsigned> *arrayFreqLen = freqLenLists[gram];
-          freqLenLists[gram]->at(1)++;
+          Array<unsigned> *arrayPos = posLists[gram];
+          arrayPos->append(j); 
+          
         }//end else
-      }//end gram array loop  
-    }//end various length gram arrays loop
+      }//end for  
+    }
   }//end for
+
+  //start pruning
+  // for(unsigned i=0;i<data.size();i++) {
+    
+  //   vector<vector<unsigned> > gramsCodes; // [2 grams] [3 grams] [4 grams]  
+    
+  //   for(unsigned z=qmin; z<=qmax; z++){
+  //     if (addStEn)
+  //       str2grams(data.at(i),gramsCodes.at(z-qmin),z,st,en);
+  //     else
+  //       str2gramsNoPrePost(data.at(i),gramsCodes.at(z-qmin),z);
+  //   }
+
+  //     for(unsigned j=0;j<gramsCodes.at(z-qmin).size();j++) {
+  //       unsigned gram = gramsCodes.at(z-qmin).at(j);
+
+  //       Array<unsigned> *arrayGram = idLists[gram];
+  //       arrayGram->append(i);
+        
+  //       Array<unsigned> *arrayPos = posLists[gram];
+  //       arrayPos->append(j);
+      
+  //     //end for  
+  //   }
+  // }
+
+
+
+
+
+
+
 }//end  createIdPosInvertedLists
 
 
@@ -236,8 +328,8 @@ const string VGramID::charsetEn =
   " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~0123456789abcdefghijklmnopqrstuvwxyz";
 const string VGramID::gramidSuffix = ".gid.bin";
 
-VGramID::VGramID(unsigned q, unsigned qmin, unsigned qmax, char st, char en, 
-               const string &charset, bool withPerm, unsigned rqf):
+VGramID::VGramID(unsigned qmin, unsigned qmax, unsigned rqf, char st, char en, 
+               const string &charset, bool withPerm):
   q(qmin),
   qmin(qmin),
   qmax(qmax),
@@ -293,99 +385,166 @@ string VGramID::getGram(unsigned id) const
   return gram;
 }
 
+
 //Threshold T (implemented differently)
-void VGramID::pruneGetIds(const string &s, vector<unsigned> &ids, 
-GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists){
-  vector<vector<unsigned> > gs;
-  vector<unsigned> grms;
-  for(unsigned z = qmin; z <= qmax; z++) {
-    vector<unsigned> temp;
-    str2grams(s, temp, z);
-    gs.push_back(temp);
-  }
-  grms.resize(gs.at(0).size());
+// void VGramID::pruneGetIds(const string &s, vector<unsigned> &ids, 
+// GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists){
+//   vector<vector<unsigned> > gs;
+//   vector<unsigned> grms;
+//   for(unsigned z = qmin; z <= qmax; z++) {
+//     vector<unsigned> temp;
+//     str2grams(s, temp, z);
+//     gs.push_back(temp);
+//   }
+//   grms.resize(gs.at(0).size());
 
-  for(unsigned w = 0; w < gs.at(0).size(); w++){
+//   for(unsigned w = 0; w < gs.at(0).size(); w++){
 
-  // priority for longest gram
-    for(unsigned z = qmax-qmin; z >= 0; z--) {
+//   // priority for longest gram
+//     for(unsigned z = qmax-qmin; z >= 0; z--) {
 
-    // if(freqLenLists.find(gs.at(z)[w]) == freqLenLists.end()
-    // ) {
+//     // if(freqLenLists.find(gs.at(z)[w]) == freqLenLists.end()
+//     // ) {
        
-    // } else {
-      if(freqLenLists[gs.at(0)[w]]->at(1) <= rareqminFreq || z == 0) { //not sure how good rarefreq is, make it small just to be safe
-        grms.push_back(gs.at(0)[w]);
+//     // } else {
+//       if(freqLenLists[gs.at(0)[w]]->at(1) <= rareqminFreq || z == 0) { //not sure how good rarefreq is, make it small just to be safe
+//         grms.push_back(gs.at(0)[w]);
          
-        Array<vector<unsigned> > *arrayPos = new Array<vector<unsigned> >();
-        vector<unsigned> tempq;
-        tempq.push_back(gs.at(0)[w]); //gram
-        tempq.push_back(w); //pos
-        arrayPos->append(tempq);
-        posLists[s] = arrayPos;
-      }
-      else if(freqLenLists[gs.at(z)[w]]->at(1) / freqLenLists[gs.at(z-1)[w]]->at(1) >= pow((z+qmin-1)/(z+qmin),2) 
-      && freqLenLists[gs.at(z)[w]]->at(1) >= rareqminFreq
-      ) { // some random threshold bound
-        grms.push_back(gs.at(z)[w]);
+//         vector<vector<unsigned> > arrayPos; 
+//         vector<unsigned> tempq;
+//         tempq.push_back(gs.at(0)[w]); //gram
+//         tempq.push_back(w); //pos
+//         arrayPos.push_back(tempq);
+//         posLists[s] = arrayPos;
+//       }
+//       else if(freqLenLists[gs.at(z)[w]]->at(1) / freqLenLists[gs.at(z-1)[w]]->at(1) >= pow((z+qmin-1)/(z+qmin),2) 
+//       && freqLenLists[gs.at(z)[w]]->at(1) >= rareqminFreq
+//       ) { // some random threshold bound
+//         grms.push_back(gs.at(z)[w]);
 
-        Array<vector<unsigned> > *arrayPos = new Array<vector<unsigned> >();
-        vector<unsigned> tempq;
-        tempq.push_back(gs.at(z)[w]); //gram
-        tempq.push_back(w); //pos
-        arrayPos->append(tempq);
-        posLists[s] = arrayPos;
+//         vector<vector<unsigned> > arrayPos; 
+//         vector<unsigned> tempq;
+//         tempq.push_back(gs.at(z)[w]); //gram
+//         tempq.push_back(w); //pos
+//         arrayPos.push_back(tempq);
+//         posLists[s] = arrayPos;
 
-        w = w + z;
-        break;
-      }
-    // }
-    }
-  }
+//         w = w + z;
+//         break;
+//       }
+//     // }
+//     }
+//   }
 
-  for (vector<unsigned>::const_iterator it = grms.begin(); it != grms.end(); it++)
-    ids.push_back(*it);
-}
+//   for (vector<unsigned>::const_iterator it = grms.begin(); it != grms.end(); it++)
+//     ids.push_back(*it);
+// }
 
 
 
-void VGramID::getIds(const string &s, vector<unsigned> &ids, 
-GramListMap &idLists, StringGramPos &posLists, GramListMap &freqLenLists) const
+
+void VGramID::getIds(const string &s, vector<unsigned> &ids, vector<unsigned> &pids, 
+GramListMap &idLists, GramListMap &posLists) 
 {
+  string padded;
+  if(s.length()<qmin){
+    padded = string(qmin - s.length(), PREFIXCHAR) + s; 
+  } else {padded = s;}
+
   vector<vector<unsigned> > gs;
   vector<unsigned> grms;
-  for(unsigned z = qmin; z <= qmax; z++) {
+  vector<unsigned> pos;
+  unsigned qqmax = qmax > padded.length() ? padded.length() : qmax;
+  // cerr << "  txx " << qmax << endl;
+  for(unsigned z = qmin; z <= qqmax; z++) {
     vector<unsigned> temp;
-    str2grams(s, temp, z);
-    gs.push_back(temp);
-  }
-  grms.resize(gs.at(0).size());
+    // if(z == qmin){
+    //   str2grams(s, temp, z);
+    // }
+    // else {
+    // if(s.length()<z){
+    //     gs.push_back(temp); // empty?
+    //   } else {
+        str2gramsNoPrePost(padded,temp,z);
+        gs.push_back(temp);
+      // }
+    
+    // }
 
-  for(unsigned w = 0; w < gs.at(0).size(); w++){   
-  // priority for longest gram
+  } // gs: [[2 grams] [3 grams] [4 grams]] 
+  // grms.resize(gs.at(0).size());
+
+  // cerr << "huh????" << gs.at(0).size() << endl;
+  // cerr << "huh????" << gs.at(1).size() << endl;
+  // cerr << "huh????" << gs.at(2).size() << endl;
+
+  unsigned currentcoverage = 0;
+  for(unsigned w = 0; w < gs.at(0).size(); w++){ //qmin gram size   
+  // priority for longest gram  
+
     if(idLists.find(gs.at(0)[w]) == idLists.end()){
       grms.push_back(gs.at(0)[w]); // query string somehow doesn't have some qmin gram.
-      break;
+      pos.push_back(w);
+      currentcoverage = w + qmin;
+      continue;
     }
 
-    for(unsigned z = qmax-qmin; z >= 0; z--) {
-      if(freqLenLists[gs.at(0)[w]]->at(1) <= rareqminFreq || z == 0) { //not sure how good rarefreq is, make it small just to be safe
-        grms.push_back(gs.at(0)[w]);
+    // cerr << "qqmax: " << qqmax << " ";
+        
+    for(unsigned z = qqmax-qmin; z >= 0; z--) {
+      if(idLists[gs.at(0).at(w)]->size() <= rareqminFreq || z == 0) { //not sure how good rarefreq is, make it small just to be safe
+        // cerr << "currentcoverage: " << currentcoverage << " w + qmin :"  << w + qmin << endl;
+        // if(1){
+        if(w + qmin > currentcoverage){
+          grms.push_back(gs.at(0)[w]);
+          pos.push_back(w);
+          currentcoverage = w + qmin;
+          
+        }
         break;
       }
 
-      if(freqLenLists[gs.at(z)[w]]->at(1) / freqLenLists[gs.at(z-1)[w]]->at(1) >= pow((z+qmin-1)/(z+qmin),2) 
-      && freqLenLists[gs.at(z)[w]]->at(1) >= rareqminFreq
+      // if(w - qmin + 1 < 0) { //real current location is negative
+      //   continue;
+      // }
+
+      if(w > gs.at(z).size()-1) { //current location doesnt have gram as long as z
+        // cerr << "toot1 "; 
+        continue;
+      }
+      
+      if(idLists.find(gs.at(z)[w]) == idLists.end()){
+        // cerr << "toot2 ";
+        continue;
+      }
+
+
+      // cerr << "yo dawg wtf " << idLists[gs.at(z).at(w)]->size() << endl;
+      if(idLists[gs.at(z).at(w)]->size() > 10// / idLists[gs.at(z-1).at(w)]->size() >= pow((z+qmin-1)/(z+qmin),4) 
+      && idLists[gs.at(z).at(w)]->size() > rareqminFreq
       ) { // some random threshold bound
-        grms.push_back(gs.at(z)[w]);
-        break;
+
+        if(w + qmin + z > currentcoverage){
+          grms.push_back(gs.at(z)[w]);
+          pos.push_back(w);
+          currentcoverage = w + qmin + z;
+          break; 
+        }
+
+
       }
     }
+    
   }
 
   for (vector<unsigned>::const_iterator it = grms.begin(); it != grms.end(); it++)
     ids.push_back(*it);
-
+  
+  if(&pids){
+    for (vector<unsigned>::const_iterator it = pos.begin(); it != pos.end(); it++)
+      pids.push_back(*it);  
+  }
+  
 }
 
 void VGramID::getGrams(const vector<unsigned> &ids, vector<string> &grams) const
