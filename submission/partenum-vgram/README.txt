@@ -1,8 +1,11 @@
+Building requires linux environment,
+and gcc g++ cmake libboost-dev packages
+
 A loosely VGram-Equipped PartEnum.
 
 Currently using a direct frequency prune for hashmaps of grams (trie did not mesh well with the original code)
 NAG was not able to bound to the desired depth due to data structure reason, but it works in principle.
-Currently using raw string edit distance on predicate. NAGs can be switched on in the VPartEnum::vsearch()
+Currently using raw string edit distance on predicate. NAGs can be switched on in the VPartEnum::vsearch(), it would return lots of false positives.
 
 
 Usage:
