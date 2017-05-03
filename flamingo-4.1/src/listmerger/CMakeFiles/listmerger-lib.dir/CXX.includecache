@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/compressionargs.h
+../common/src/compressionargs.h
 set
 -
 typedef.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/typedef.h
+../common/src/typedef.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/filtertypes.h
+../common/src/filtertypes.h
 iostream
 -
 fstream
@@ -20,9 +20,9 @@ fstream
 cstring
 -
 gramgen.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/gramgen.h
+../common/src/gramgen.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/gramgen.h
+../common/src/gramgen.h
 map
 -
 set
@@ -32,31 +32,31 @@ vector
 fstream
 -
 tr1_local.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/tr1_local.h
+../common/src/tr1_local.h
 typedef.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/typedef.h
+../common/src/typedef.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/query.h
+../common/src/query.h
 typedef.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/typedef.h
+../common/src/typedef.h
 simmetric.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/simmetric.h
+../common/src/simmetric.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/simmetric.h
+../common/src/simmetric.h
 typedef.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/typedef.h
+../common/src/typedef.h
 gramgen.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/gramgen.h
+../common/src/gramgen.h
 compressionargs.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/compressionargs.h
+../common/src/compressionargs.h
 filtertypes.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/filtertypes.h
+../common/src/filtertypes.h
 cmath
 -
 algorithm
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/tr1_local.h
+../common/src/tr1_local.h
 functional
 -
 unordered_map
@@ -70,9 +70,9 @@ tr1/unordered_map
 tr1/unordered_set
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../common/src/typedef.h
+../common/src/typedef.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/filtertreenode.h
+../filtertree/src/filtertreenode.h
 vector
 -
 set
@@ -80,59 +80,59 @@ set
 tr1/unordered_map
 -
 gramlist.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/gramlist.h
+../filtertree/src/gramlist.h
 gramlistondisk.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/gramlistondisk.h
+../filtertree/src/gramlistondisk.h
 common/src/filtertypes.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/common/src/filtertypes.h
+../filtertree/src/common/src/filtertypes.h
 common/src/gramgen.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/common/src/gramgen.h
+../filtertree/src/common/src/gramgen.h
 util/src/array.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/util/src/array.h
+../filtertree/src/util/src/array.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/ftindexerabs.h
+../filtertree/src/ftindexerabs.h
 cmath
 -
 filtertreenode.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/filtertreenode.h
+../filtertree/src/filtertreenode.h
 statsutil.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/statsutil.h
+../filtertree/src/statsutil.h
 gramlist.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/gramlist.h
+../filtertree/src/gramlist.h
 gramlistsimple.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/gramlistsimple.h
+../filtertree/src/gramlistsimple.h
 stringcontainer.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/stringcontainer.h
+../filtertree/src/stringcontainer.h
 common/src/filtertypes.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/common/src/filtertypes.h
+../filtertree/src/common/src/filtertypes.h
 common/src/gramgen.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/common/src/gramgen.h
+../filtertree/src/common/src/gramgen.h
 common/src/compressionargs.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/common/src/compressionargs.h
+../filtertree/src/common/src/compressionargs.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/ftindexermem.h
+../filtertree/src/ftindexermem.h
 ftindexermemabs.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/ftindexermemabs.h
+../filtertree/src/ftindexermemabs.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/ftindexermemabs.h
+../filtertree/src/ftindexermemabs.h
 ftindexerabs.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/ftindexerabs.h
+../filtertree/src/ftindexerabs.h
 gramlistsimple.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/gramlistsimple.h
+../filtertree/src/gramlistsimple.h
 util/src/debug.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/util/src/debug.h
+../filtertree/src/util/src/debug.h
 stdint.h
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/ftindexerondisk.h
+../filtertree/src/ftindexerondisk.h
 ftindexerabs.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/ftindexerabs.h
+../filtertree/src/ftindexerabs.h
 ftindexermem.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/ftindexermem.h
+../filtertree/src/ftindexermem.h
 gramlistondisk.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/gramlistondisk.h
+../filtertree/src/gramlistondisk.h
 util/src/misc.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/util/src/misc.h
+../filtertree/src/util/src/misc.h
 stdint.h
 -
 fstream
@@ -144,25 +144,25 @@ cstdlib
 cstring
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/gramlist.h
+../filtertree/src/gramlist.h
 fstream
 -
 vector
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/gramlistondisk.h
+../filtertree/src/gramlistondisk.h
 gramlist.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/gramlist.h
+../filtertree/src/gramlist.h
 iostream
 -
 cstring
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/gramlistsimple.h
+../filtertree/src/gramlistsimple.h
 gramlist.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/gramlist.h
+../filtertree/src/gramlist.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/statsutil.h
+../filtertree/src/statsutil.h
 iostream
 -
 vector
@@ -170,15 +170,15 @@ vector
 sys/time.h
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/stringcontainer.h
+../filtertree/src/stringcontainer.h
 stringrm.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/stringrm.h
+../filtertree/src/stringrm.h
 util/src/misc.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/util/src/misc.h
+../filtertree/src/util/src/misc.h
 util/src/debug.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/util/src/debug.h
+../filtertree/src/util/src/debug.h
 common/src/filtertypes.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/common/src/filtertypes.h
+../filtertree/src/common/src/filtertypes.h
 math.h
 -
 vector
@@ -192,7 +192,7 @@ iterator
 cstring
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../filtertree/src/stringrm.h
+../filtertree/src/stringrm.h
 iostream
 -
 fstream
@@ -202,7 +202,7 @@ set
 tr1/unordered_map
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../util/src/array.h
+../util/src/array.h
 cstdlib
 -
 cassert
@@ -218,13 +218,13 @@ cmath
 cstdio
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../util/src/debug.h
+../util/src/debug.h
 boost/progress.hpp
 -
 looptimer.h
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../util/src/looptimer.h
+../util/src/looptimer.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../util/src/looptimer.h
+../util/src/looptimer.h
 stdio.h
 -
 time.h
@@ -234,7 +234,7 @@ sys/time.h
 string
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/filtertree/../util/src/misc.h
+../util/src/misc.h
 algorithm
 -
 string
@@ -246,21 +246,21 @@ vector
 tr1/unordered_map
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/divideskipmerger.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/divideskipmerger.cc
 divideskipmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/divideskipmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/divideskipmerger.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/divideskipmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/divideskipmerger.h
 cmath
 -
 iostream
 -
 listmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/listmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/listmerger.h
 util/src/misc.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/util/src/misc.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/util/src/misc.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/example.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/example.cc
 fstream
 -
 iostream
@@ -268,27 +268,27 @@ iostream
 vector
 -
 listmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/listmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/listmerger.h
 divideskipmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/divideskipmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/divideskipmerger.h
 heapmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/heapmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/heapmerger.h
 mergeoptmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeoptmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeoptmerger.h
 mergeskipmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeskipmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeskipmerger.h
 scancountmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/scancountmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/scancountmerger.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/heapmerger.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/heapmerger.cc
 heapmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/heapmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/heapmerger.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/heapmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/heapmerger.h
 listmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/listmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/listmerger.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/listmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/listmerger.h
 vector
 -
 string
@@ -298,61 +298,61 @@ set
 stdint.h
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeoptmerger.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeoptmerger.cc
 mergeoptmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeoptmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeoptmerger.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeoptmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeoptmerger.h
 listmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/listmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/listmerger.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeskipmerger.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeskipmerger.cc
 mergeskipmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeskipmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeskipmerger.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeskipmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeskipmerger.h
 listmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/listmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/listmerger.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergerabs.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergerabs.h
 filtertree/src/gramlist.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/filtertree/src/gramlist.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/filtertree/src/gramlist.h
 filtertree/src/gramlistondisk.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/filtertree/src/gramlistondisk.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/filtertree/src/gramlistondisk.h
 filtertree/src/statsutil.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/filtertree/src/statsutil.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/filtertree/src/statsutil.h
 filtertree/src/stringcontainer.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/filtertree/src/stringcontainer.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/filtertree/src/stringcontainer.h
 common/src/query.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/common/src/query.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/common/src/query.h
 common/src/filtertypes.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/common/src/filtertypes.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/common/src/filtertypes.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergeradapt.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergeradapt.cc
 ondiskmergeradapt.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergeradapt.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergeradapt.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergeradapt.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergeradapt.h
 ondiskmergerabs.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergerabs.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergerabs.h
 filtertree/src/gramlistondisk.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/filtertree/src/gramlistondisk.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/filtertree/src/gramlistondisk.h
 filtertree/src/statsutil.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/filtertree/src/statsutil.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/filtertree/src/statsutil.h
 filtertree/src/ftindexerondisk.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/filtertree/src/ftindexerondisk.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/filtertree/src/ftindexerondisk.h
 util/src/misc.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/util/src/misc.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/util/src/misc.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergersimple.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergersimple.cc
 ondiskmergersimple.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergersimple.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergersimple.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergersimple.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergersimple.h
 ondiskmergerabs.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergerabs.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergerabs.h
 mergeoptmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeoptmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeoptmerger.h
 fstream
 -
 tr1/unordered_map
@@ -360,11 +360,11 @@ tr1/unordered_map
 set
 -
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/scancountmerger.cc
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/scancountmerger.cc
 scancountmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/scancountmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/scancountmerger.h
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/scancountmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/scancountmerger.h
 listmerger.h
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/listmerger.h
+/home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/listmerger.h
 

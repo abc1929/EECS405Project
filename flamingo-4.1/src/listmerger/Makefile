@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jwu/Documents/Github/EECS405Project/test/src/filtertree
+CMAKE_SOURCE_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jwu/Documents/Github/EECS405Project/test/src/filtertree
+CMAKE_BINARY_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -73,14 +73,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(CMAKE_COMMAND) -E cmake_progress_start /home/jwu/Documents/Github/EECS405Project/test/src/filtertree/CMakeFiles /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/progress.marks
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jwu/Documents/Github/EECS405Project/test/src/filtertree/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/CMakeFiles /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/clean
+	$(MAKE) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -89,67 +89,77 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/example_lm.dir/rule:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/example_lm.dir/rule
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/example_lm.dir/rule
+#=============================================================================
+# Target rules for targets named example_lm
 
-# Convenience name for target.
-example_lm: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/example_lm.dir/rule
+# Build rule for target.
+example_lm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 example_lm
 .PHONY : example_lm
 
 # fast build rule for target.
 example_lm/fast:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/example_lm.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/example_lm.dir/build
+	$(MAKE) -f CMakeFiles/example_lm.dir/build.make CMakeFiles/example_lm.dir/build
 .PHONY : example_lm/fast
 
-# Convenience name for target.
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/rule:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/rule
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/rule
+#=============================================================================
+# Target rules for targets named listmerger-lib
 
-# Convenience name for target.
-listmerger-lib: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/rule
+# Build rule for target.
+listmerger-lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 listmerger-lib
 .PHONY : listmerger-lib
 
 # fast build rule for target.
 listmerger-lib/fast:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/build
 .PHONY : listmerger-lib/fast
 
-# Convenience name for target.
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/unittest_lm.dir/rule:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f CMakeFiles/Makefile2 /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/unittest_lm.dir/rule
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/unittest_lm.dir/rule
+#=============================================================================
+# Target rules for targets named unittest_lm
 
-# Convenience name for target.
-unittest_lm: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/unittest_lm.dir/rule
+# Build rule for target.
+unittest_lm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 unittest_lm
 .PHONY : unittest_lm
 
 # fast build rule for target.
 unittest_lm/fast:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/unittest_lm.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/unittest_lm.dir/build
+	$(MAKE) -f CMakeFiles/unittest_lm.dir/build.make CMakeFiles/unittest_lm.dir/build
 .PHONY : unittest_lm/fast
+
+#=============================================================================
+# Target rules for targets named util-lib
+
+# Build rule for target.
+util-lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 util-lib
+.PHONY : util-lib
+
+# fast build rule for target.
+util-lib/fast:
+	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/util/CMakeFiles/util-lib.dir/build
+.PHONY : util-lib/fast
 
 src/divideskipmerger.o: src/divideskipmerger.cc.o
 .PHONY : src/divideskipmerger.o
 
 # target to build an object file
 src/divideskipmerger.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o
 .PHONY : src/divideskipmerger.cc.o
 
 src/divideskipmerger.i: src/divideskipmerger.cc.i
@@ -157,7 +167,7 @@ src/divideskipmerger.i: src/divideskipmerger.cc.i
 
 # target to preprocess a source file
 src/divideskipmerger.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.i
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.i
 .PHONY : src/divideskipmerger.cc.i
 
 src/divideskipmerger.s: src/divideskipmerger.cc.s
@@ -165,7 +175,7 @@ src/divideskipmerger.s: src/divideskipmerger.cc.s
 
 # target to generate assembly for a file
 src/divideskipmerger.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.s
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.s
 .PHONY : src/divideskipmerger.cc.s
 
 src/example.o: src/example.cc.o
@@ -173,8 +183,8 @@ src/example.o: src/example.cc.o
 
 # target to build an object file
 src/example.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/example_lm.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/example_lm.dir/src/example.cc.o
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o
+	$(MAKE) -f CMakeFiles/example_lm.dir/build.make CMakeFiles/example_lm.dir/src/example.cc.o
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/example.cc.o
 .PHONY : src/example.cc.o
 
 src/example.i: src/example.cc.i
@@ -182,8 +192,8 @@ src/example.i: src/example.cc.i
 
 # target to preprocess a source file
 src/example.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/example_lm.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/example_lm.dir/src/example.cc.i
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.i
+	$(MAKE) -f CMakeFiles/example_lm.dir/build.make CMakeFiles/example_lm.dir/src/example.cc.i
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/example.cc.i
 .PHONY : src/example.cc.i
 
 src/example.s: src/example.cc.s
@@ -191,8 +201,8 @@ src/example.s: src/example.cc.s
 
 # target to generate assembly for a file
 src/example.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/example_lm.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/example_lm.dir/src/example.cc.s
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.s
+	$(MAKE) -f CMakeFiles/example_lm.dir/build.make CMakeFiles/example_lm.dir/src/example.cc.s
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/example.cc.s
 .PHONY : src/example.cc.s
 
 src/heapmerger.o: src/heapmerger.cc.o
@@ -200,7 +210,7 @@ src/heapmerger.o: src/heapmerger.cc.o
 
 # target to build an object file
 src/heapmerger.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o
 .PHONY : src/heapmerger.cc.o
 
 src/heapmerger.i: src/heapmerger.cc.i
@@ -208,7 +218,7 @@ src/heapmerger.i: src/heapmerger.cc.i
 
 # target to preprocess a source file
 src/heapmerger.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.i
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.i
 .PHONY : src/heapmerger.cc.i
 
 src/heapmerger.s: src/heapmerger.cc.s
@@ -216,7 +226,7 @@ src/heapmerger.s: src/heapmerger.cc.s
 
 # target to generate assembly for a file
 src/heapmerger.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.s
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.s
 .PHONY : src/heapmerger.cc.s
 
 src/mergeoptmerger.o: src/mergeoptmerger.cc.o
@@ -224,7 +234,7 @@ src/mergeoptmerger.o: src/mergeoptmerger.cc.o
 
 # target to build an object file
 src/mergeoptmerger.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o
 .PHONY : src/mergeoptmerger.cc.o
 
 src/mergeoptmerger.i: src/mergeoptmerger.cc.i
@@ -232,7 +242,7 @@ src/mergeoptmerger.i: src/mergeoptmerger.cc.i
 
 # target to preprocess a source file
 src/mergeoptmerger.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.i
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.i
 .PHONY : src/mergeoptmerger.cc.i
 
 src/mergeoptmerger.s: src/mergeoptmerger.cc.s
@@ -240,7 +250,7 @@ src/mergeoptmerger.s: src/mergeoptmerger.cc.s
 
 # target to generate assembly for a file
 src/mergeoptmerger.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.s
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.s
 .PHONY : src/mergeoptmerger.cc.s
 
 src/mergeskipmerger.o: src/mergeskipmerger.cc.o
@@ -248,7 +258,7 @@ src/mergeskipmerger.o: src/mergeskipmerger.cc.o
 
 # target to build an object file
 src/mergeskipmerger.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o
 .PHONY : src/mergeskipmerger.cc.o
 
 src/mergeskipmerger.i: src/mergeskipmerger.cc.i
@@ -256,7 +266,7 @@ src/mergeskipmerger.i: src/mergeskipmerger.cc.i
 
 # target to preprocess a source file
 src/mergeskipmerger.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.i
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.i
 .PHONY : src/mergeskipmerger.cc.i
 
 src/mergeskipmerger.s: src/mergeskipmerger.cc.s
@@ -264,7 +274,7 @@ src/mergeskipmerger.s: src/mergeskipmerger.cc.s
 
 # target to generate assembly for a file
 src/mergeskipmerger.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.s
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.s
 .PHONY : src/mergeskipmerger.cc.s
 
 src/ondiskmergeradapt.o: src/ondiskmergeradapt.cc.o
@@ -272,7 +282,7 @@ src/ondiskmergeradapt.o: src/ondiskmergeradapt.cc.o
 
 # target to build an object file
 src/ondiskmergeradapt.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o
 .PHONY : src/ondiskmergeradapt.cc.o
 
 src/ondiskmergeradapt.i: src/ondiskmergeradapt.cc.i
@@ -280,7 +290,7 @@ src/ondiskmergeradapt.i: src/ondiskmergeradapt.cc.i
 
 # target to preprocess a source file
 src/ondiskmergeradapt.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.i
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.i
 .PHONY : src/ondiskmergeradapt.cc.i
 
 src/ondiskmergeradapt.s: src/ondiskmergeradapt.cc.s
@@ -288,7 +298,7 @@ src/ondiskmergeradapt.s: src/ondiskmergeradapt.cc.s
 
 # target to generate assembly for a file
 src/ondiskmergeradapt.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.s
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.s
 .PHONY : src/ondiskmergeradapt.cc.s
 
 src/ondiskmergersimple.o: src/ondiskmergersimple.cc.o
@@ -296,7 +306,7 @@ src/ondiskmergersimple.o: src/ondiskmergersimple.cc.o
 
 # target to build an object file
 src/ondiskmergersimple.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o
 .PHONY : src/ondiskmergersimple.cc.o
 
 src/ondiskmergersimple.i: src/ondiskmergersimple.cc.i
@@ -304,7 +314,7 @@ src/ondiskmergersimple.i: src/ondiskmergersimple.cc.i
 
 # target to preprocess a source file
 src/ondiskmergersimple.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.i
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.i
 .PHONY : src/ondiskmergersimple.cc.i
 
 src/ondiskmergersimple.s: src/ondiskmergersimple.cc.s
@@ -312,7 +322,7 @@ src/ondiskmergersimple.s: src/ondiskmergersimple.cc.s
 
 # target to generate assembly for a file
 src/ondiskmergersimple.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.s
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.s
 .PHONY : src/ondiskmergersimple.cc.s
 
 src/scancountmerger.o: src/scancountmerger.cc.o
@@ -320,7 +330,7 @@ src/scancountmerger.o: src/scancountmerger.cc.o
 
 # target to build an object file
 src/scancountmerger.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o
 .PHONY : src/scancountmerger.cc.o
 
 src/scancountmerger.i: src/scancountmerger.cc.i
@@ -328,7 +338,7 @@ src/scancountmerger.i: src/scancountmerger.cc.i
 
 # target to preprocess a source file
 src/scancountmerger.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.i
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.i
 .PHONY : src/scancountmerger.cc.i
 
 src/scancountmerger.s: src/scancountmerger.cc.s
@@ -336,7 +346,7 @@ src/scancountmerger.s: src/scancountmerger.cc.s
 
 # target to generate assembly for a file
 src/scancountmerger.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.s
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.s
 .PHONY : src/scancountmerger.cc.s
 
 src/unittest.o: src/unittest.cc.o
@@ -344,7 +354,7 @@ src/unittest.o: src/unittest.cc.o
 
 # target to build an object file
 src/unittest.cc.o:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/unittest_lm.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/unittest_lm.dir/src/unittest.cc.o
+	$(MAKE) -f CMakeFiles/unittest_lm.dir/build.make CMakeFiles/unittest_lm.dir/src/unittest.cc.o
 .PHONY : src/unittest.cc.o
 
 src/unittest.i: src/unittest.cc.i
@@ -352,7 +362,7 @@ src/unittest.i: src/unittest.cc.i
 
 # target to preprocess a source file
 src/unittest.cc.i:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/unittest_lm.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/unittest_lm.dir/src/unittest.cc.i
+	$(MAKE) -f CMakeFiles/unittest_lm.dir/build.make CMakeFiles/unittest_lm.dir/src/unittest.cc.i
 .PHONY : src/unittest.cc.i
 
 src/unittest.s: src/unittest.cc.s
@@ -360,7 +370,7 @@ src/unittest.s: src/unittest.cc.s
 
 # target to generate assembly for a file
 src/unittest.cc.s:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/unittest_lm.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/unittest_lm.dir/src/unittest.cc.s
+	$(MAKE) -f CMakeFiles/unittest_lm.dir/build.make CMakeFiles/unittest_lm.dir/src/unittest.cc.s
 .PHONY : src/unittest.cc.s
 
 # Help Target
@@ -374,6 +384,7 @@ help:
 	@echo "... listmerger-lib"
 	@echo "... rebuild_cache"
 	@echo "... unittest_lm"
+	@echo "... util-lib"
 	@echo "... src/divideskipmerger.o"
 	@echo "... src/divideskipmerger.i"
 	@echo "... src/divideskipmerger.s"
@@ -412,6 +423,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

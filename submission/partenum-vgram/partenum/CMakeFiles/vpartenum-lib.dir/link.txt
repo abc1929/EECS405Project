@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -g   -shared -Wl,-soname,libvpartenum-lib.so -o build/libvpartenum-lib.so CMakeFiles/vpartenum-lib.dir/src/vpartenum.cc.o  -L/home/jwu/Documents/Github/lol/src/partenum/../util/build 

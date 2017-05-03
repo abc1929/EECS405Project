@@ -35,203 +35,203 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jwu/Documents/Github/EECS405Project/test/src/filtertree
+CMAKE_SOURCE_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jwu/Documents/Github/EECS405Project/test/src/filtertree
+CMAKE_BINARY_DIR = /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger
 
 # Include any dependencies generated for this target.
-include /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/depend.make
+include CMakeFiles/listmerger-lib.dir/depend.make
 
 # Include the progress variables for this target.
-include /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/progress.make
+include CMakeFiles/listmerger-lib.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/flags.make
+include CMakeFiles/listmerger-lib.dir/flags.make
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/divideskipmerger.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/filtertree/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/divideskipmerger.cc
+CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o: CMakeFiles/listmerger-lib.dir/flags.make
+CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o: src/divideskipmerger.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/divideskipmerger.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.i: cmake_force
+CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/divideskipmerger.cc > CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/divideskipmerger.cc > CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.s: cmake_force
+CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/divideskipmerger.cc -o CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/divideskipmerger.cc -o CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.requires
+CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.requires:
+.PHONY : CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.provides
+CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.provides: CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.requires
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.provides.build
+.PHONY : CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o
+CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.provides.build: CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/example.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/filtertree/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/example.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/example.cc
+CMakeFiles/listmerger-lib.dir/src/example.cc.o: CMakeFiles/listmerger-lib.dir/flags.make
+CMakeFiles/listmerger-lib.dir/src/example.cc.o: src/example.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/listmerger-lib.dir/src/example.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/example.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/example.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.i: cmake_force
+CMakeFiles/listmerger-lib.dir/src/example.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/listmerger-lib.dir/src/example.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/example.cc > CMakeFiles/listmerger-lib.dir/src/example.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/example.cc > CMakeFiles/listmerger-lib.dir/src/example.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.s: cmake_force
+CMakeFiles/listmerger-lib.dir/src/example.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/listmerger-lib.dir/src/example.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/example.cc -o CMakeFiles/listmerger-lib.dir/src/example.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/example.cc -o CMakeFiles/listmerger-lib.dir/src/example.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o.requires
+CMakeFiles/listmerger-lib.dir/src/example.cc.o.requires:
+.PHONY : CMakeFiles/listmerger-lib.dir/src/example.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o.provides
+CMakeFiles/listmerger-lib.dir/src/example.cc.o.provides: CMakeFiles/listmerger-lib.dir/src/example.cc.o.requires
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/example.cc.o.provides.build
+.PHONY : CMakeFiles/listmerger-lib.dir/src/example.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o
+CMakeFiles/listmerger-lib.dir/src/example.cc.o.provides.build: CMakeFiles/listmerger-lib.dir/src/example.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/heapmerger.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/filtertree/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/heapmerger.cc
+CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o: CMakeFiles/listmerger-lib.dir/flags.make
+CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o: src/heapmerger.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/heapmerger.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.i: cmake_force
+CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/heapmerger.cc > CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/heapmerger.cc > CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.s: cmake_force
+CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/heapmerger.cc -o CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/heapmerger.cc -o CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.requires
+CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.requires:
+.PHONY : CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.provides
+CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.provides: CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.requires
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.provides.build
+.PHONY : CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o
+CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.provides.build: CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeoptmerger.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/filtertree/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeoptmerger.cc
+CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o: CMakeFiles/listmerger-lib.dir/flags.make
+CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o: src/mergeoptmerger.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeoptmerger.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.i: cmake_force
+CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeoptmerger.cc > CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeoptmerger.cc > CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.s: cmake_force
+CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeoptmerger.cc -o CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeoptmerger.cc -o CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.requires
+CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.requires:
+.PHONY : CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.provides
+CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.provides: CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.requires
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.provides.build
+.PHONY : CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o
+CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.provides.build: CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeskipmerger.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/filtertree/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeskipmerger.cc
+CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o: CMakeFiles/listmerger-lib.dir/flags.make
+CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o: src/mergeskipmerger.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeskipmerger.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.i: cmake_force
+CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeskipmerger.cc > CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeskipmerger.cc > CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.s: cmake_force
+CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/mergeskipmerger.cc -o CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/mergeskipmerger.cc -o CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.requires
+CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.requires:
+.PHONY : CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.provides
+CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.provides: CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.requires
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.provides.build
+.PHONY : CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o
+CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.provides.build: CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergeradapt.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/filtertree/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergeradapt.cc
+CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o: CMakeFiles/listmerger-lib.dir/flags.make
+CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o: src/ondiskmergeradapt.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergeradapt.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.i: cmake_force
+CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergeradapt.cc > CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergeradapt.cc > CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.s: cmake_force
+CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergeradapt.cc -o CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergeradapt.cc -o CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.requires
+CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.requires:
+.PHONY : CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.provides
+CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.provides: CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.requires
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.provides.build
+.PHONY : CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o
+CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.provides.build: CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergersimple.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/filtertree/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergersimple.cc
+CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o: CMakeFiles/listmerger-lib.dir/flags.make
+CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o: src/ondiskmergersimple.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergersimple.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.i: cmake_force
+CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergersimple.cc > CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergersimple.cc > CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.s: cmake_force
+CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/ondiskmergersimple.cc -o CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/ondiskmergersimple.cc -o CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.requires
+CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.requires:
+.PHONY : CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.provides
+CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.provides: CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.requires
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.provides.build
+.PHONY : CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o
+CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.provides.build: CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/flags.make
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/scancountmerger.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/test/src/filtertree/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o -c /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/scancountmerger.cc
+CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o: CMakeFiles/listmerger-lib.dir/flags.make
+CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o: src/scancountmerger.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o -c /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/scancountmerger.cc
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.i: cmake_force
+CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.i"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/scancountmerger.cc > CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/scancountmerger.cc > CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.i
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.s: cmake_force
+CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.s"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/src/scancountmerger.cc -o CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/src/scancountmerger.cc -o CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.s
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.requires:
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.requires
+CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.requires:
+.PHONY : CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.provides: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.requires
-	$(MAKE) -f /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.provides.build
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.provides
+CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.provides: CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.requires
+	$(MAKE) -f CMakeFiles/listmerger-lib.dir/build.make CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.provides.build
+.PHONY : CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.provides
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.provides.build: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o
+CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.provides.build: CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o
 
 # Object files for target listmerger-lib
 listmerger__lib_OBJECTS = \
@@ -247,38 +247,38 @@ listmerger__lib_OBJECTS = \
 # External object files for target listmerger-lib
 listmerger__lib_EXTERNAL_OBJECTS =
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/build/liblistmerger-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/build/liblistmerger-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/build/liblistmerger-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/build/liblistmerger-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/build/liblistmerger-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/build/liblistmerger-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/build/liblistmerger-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/build/liblistmerger-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/build/liblistmerger-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build.make
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/build/liblistmerger-lib.so: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/link.txt
+build/liblistmerger-lib.so: CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o
+build/liblistmerger-lib.so: CMakeFiles/listmerger-lib.dir/src/example.cc.o
+build/liblistmerger-lib.so: CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o
+build/liblistmerger-lib.so: CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o
+build/liblistmerger-lib.so: CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o
+build/liblistmerger-lib.so: CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o
+build/liblistmerger-lib.so: CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o
+build/liblistmerger-lib.so: CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o
+build/liblistmerger-lib.so: CMakeFiles/listmerger-lib.dir/build.make
+build/liblistmerger-lib.so: CMakeFiles/listmerger-lib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library build/liblistmerger-lib.so"
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/listmerger-lib.dir/link.txt --verbose=$(VERBOSE)
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/listmerger-lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/build/liblistmerger-lib.so
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/build
+CMakeFiles/listmerger-lib.dir/build: build/liblistmerger-lib.so
+.PHONY : CMakeFiles/listmerger-lib.dir/build
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/example.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.requires
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/requires: /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.requires
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/requires
+CMakeFiles/listmerger-lib.dir/requires: CMakeFiles/listmerger-lib.dir/src/divideskipmerger.cc.o.requires
+CMakeFiles/listmerger-lib.dir/requires: CMakeFiles/listmerger-lib.dir/src/example.cc.o.requires
+CMakeFiles/listmerger-lib.dir/requires: CMakeFiles/listmerger-lib.dir/src/heapmerger.cc.o.requires
+CMakeFiles/listmerger-lib.dir/requires: CMakeFiles/listmerger-lib.dir/src/mergeoptmerger.cc.o.requires
+CMakeFiles/listmerger-lib.dir/requires: CMakeFiles/listmerger-lib.dir/src/mergeskipmerger.cc.o.requires
+CMakeFiles/listmerger-lib.dir/requires: CMakeFiles/listmerger-lib.dir/src/ondiskmergeradapt.cc.o.requires
+CMakeFiles/listmerger-lib.dir/requires: CMakeFiles/listmerger-lib.dir/src/ondiskmergersimple.cc.o.requires
+CMakeFiles/listmerger-lib.dir/requires: CMakeFiles/listmerger-lib.dir/src/scancountmerger.cc.o.requires
+.PHONY : CMakeFiles/listmerger-lib.dir/requires
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/clean:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/listmerger && $(CMAKE_COMMAND) -P CMakeFiles/listmerger-lib.dir/cmake_clean.cmake
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/clean
+CMakeFiles/listmerger-lib.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/listmerger-lib.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/listmerger-lib.dir/clean
 
-/home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/depend:
-	cd /home/jwu/Documents/Github/EECS405Project/test/src/filtertree && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jwu/Documents/Github/EECS405Project/test/src/filtertree /home/jwu/Documents/Github/EECS405Project/test/src/listmerger /home/jwu/Documents/Github/EECS405Project/test/src/filtertree /home/jwu/Documents/Github/EECS405Project/test/src/listmerger /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : /home/jwu/Documents/Github/EECS405Project/test/src/listmerger/CMakeFiles/listmerger-lib.dir/depend
+CMakeFiles/listmerger-lib.dir/depend:
+	cd /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger /home/jwu/Documents/Github/EECS405Project/flamingo-4.1/src/listmerger/CMakeFiles/listmerger-lib.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/listmerger-lib.dir/depend
 

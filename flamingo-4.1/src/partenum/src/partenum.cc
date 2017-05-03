@@ -47,7 +47,8 @@ PartEnum::PartEnum(const vector<string> &data,
   subs(subsets(n2, n2 - k2)), 
   datalen(this->data->size()), 
   siglen(subs.size() * n1), 
-  buckets(new SigsBucket[siglen])
+  buckets(new SigsBucket[siglen]),
+  countgrams(0)
 {
   if (siglen > siglenMax) {
     cerr << "siglen " << siglen << " greater than siglenMax " << siglenMax << endl;
@@ -361,9 +362,11 @@ void PartEnum::search(const string &query, const unsigned editdist,
       }
     }
   }
+
+  cerr << "Total grams count: " << countgrams << endl;
 }
 
-void PartEnum::sign(const string &s, vector<unsigned> &sig) const 
+void PartEnum::sign(const string &s, vector<unsigned> &sig) 
 {
   unsigned sigP[siglen];
   sign(s, sigP);
@@ -371,7 +374,7 @@ void PartEnum::sign(const string &s, vector<unsigned> &sig) const
     sig.push_back(sigP[i]);
 }
 
-void PartEnum::sign(const string &s, unsigned *sig) const 
+void PartEnum::sign(const string &s, unsigned *sig) 
 {
   vector<unsigned> ids;
   gramId.getIds(s, ids);
@@ -379,6 +382,7 @@ void PartEnum::sign(const string &s, unsigned *sig) const
   set<unsigned> p1;
   boost::hash<vector<unsigned> > vectorHash;
   unsigned k = 0;
+  countgrams+=ids.size();
   
   for (unsigned i = 0; i < n1; i++)
     for (vector<vector<unsigned> >::const_iterator sub = subs.begin();

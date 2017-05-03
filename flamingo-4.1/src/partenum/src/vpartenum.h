@@ -92,6 +92,7 @@ private:
   // GramListMap freqLenL;
   NagMap nag;
   unsigned k, k2, n1, n2;
+  unsigned countgrams;
 
 
   vector<vector<unsigned> > subs;

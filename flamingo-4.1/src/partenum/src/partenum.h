@@ -61,8 +61,8 @@ public:
   unsigned getK2() const { return k2; }
   unsigned getSignlen() const { return siglen; }
 
-  void sign(const string &s, vector<unsigned> &sig) const;
-  void sign(const string &s, unsigned *sig) const;
+  void sign(const string &s, vector<unsigned> &sig) ;
+  void sign(const string &s, unsigned *sig) ;
 
   bool operator==(const PartEnum &h) const;
 
@@ -72,6 +72,7 @@ private:
   unsigned k, k2, n1, n2;
   vector<vector<unsigned> > subs;
   unsigned datalen, siglen;
+  unsigned countgrams;
   SigsBucket *buckets;
   
   static const unsigned siglenMax;

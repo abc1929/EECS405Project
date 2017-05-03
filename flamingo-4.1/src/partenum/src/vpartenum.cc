@@ -54,7 +54,8 @@ VPartEnum::VPartEnum(const vector<string> &data,
   lL(*new GramLengthMap()),
   nag(*new NagMap()),
   qmin(qmin),
-  qmax(qmax)
+  qmax(qmax),
+  countgrams(0)
 {
   cerr << "test1";
   if (siglen > siglenMax) {
@@ -383,6 +384,8 @@ void VPartEnum::vsearch(const string &query, const unsigned editdist,
       }
     }
   }
+  cerr << "Total grams count: " << countgrams << endl;
+  
 }
 
 
@@ -493,11 +496,11 @@ void VPartEnum::NAG(const string &s, unsigned maxk, NagMap &nag)
         // }
       }
 
-      cerr << "test nag ";
-      for(unsigned x = 0; x < nagsi.size(); x++){
-        cerr << nagsi[x];
-      }
-      cerr << endl;
+      // cerr << "test nag ";
+      // for(unsigned x = 0; x < nagsi.size(); x++){
+      //   cerr << nagsi[x];
+      // }
+      // cerr << endl;
 
 
       // for(unsigned i = 1; i < nagsi.size()-1; i++){
@@ -611,6 +614,7 @@ void VPartEnum::buildsign(const string &s, unsigned *sig)
   vector<unsigned> nu; 
   vGramID.getIds(s, ids, nu, idL, posL); // us
   // cerr << "ecksdee \n"; 
+  countgrams+=ids.size();
   NAG(s, getEditdist(), nag);
   // cerr << "buildsign test \n";  
   // VGramID.getIds(s, ids);

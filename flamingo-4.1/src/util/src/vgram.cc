@@ -337,7 +337,7 @@ VGramID::VGramID(unsigned qmin, unsigned qmax, unsigned rqf, char st, char en,
   en(en),
   charset(string(1, st) + charset + string(1, en)), 
   charsetLen(this->charset.size()), 
-  n(pow(charsetLen, qmax)), 
+  n(pow(charsetLen, qmin+2)), 
   perm(vector<unsigned>(n)),
   rareqminFreq(rqf)
 {
@@ -474,10 +474,6 @@ GramListMap &idLists, GramListMap &posLists)
   } // gs: [[2 grams] [3 grams] [4 grams]] 
   // grms.resize(gs.at(0).size());
 
-  // cerr << "huh????" << gs.at(0).size() << endl;
-  // cerr << "huh????" << gs.at(1).size() << endl;
-  // cerr << "huh????" << gs.at(2).size() << endl;
-
   unsigned currentcoverage = 0;
   for(unsigned w = 0; w < gs.at(0).size(); w++){ //qmin gram size   
   // priority for longest gram  
@@ -519,7 +515,7 @@ GramListMap &idLists, GramListMap &posLists)
       }
 
 
-      // cerr << "yo dawg wtf " << idLists[gs.at(z).at(w)]->size() << endl;
+      // cerr << "test " << idLists[gs.at(z).at(w)]->size() << endl;
       if(idLists[gs.at(z).at(w)]->size() > 10// / idLists[gs.at(z-1).at(w)]->size() >= pow((z+qmin-1)/(z+qmin),4) 
       && idLists[gs.at(z).at(w)]->size() > rareqminFreq
       ) { // some random threshold bound

@@ -1,0 +1,3 @@
+/home/jwu/Documents/Github/lol/src/partenum/CMakeFiles/example_vpartenum.dir
+/home/jwu/Documents/Github/lol/src/util/CMakeFiles/util-lib.dir
+/home/jwu/Documents/Github/lol/src/partenum/CMakeFiles/vpartenum-lib.dir
